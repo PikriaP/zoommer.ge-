@@ -1,6 +1,6 @@
 @font-face {
     font-family: __firago_124989;
-    src: url(/_next/static/media/466945d7211604ce-s.p.ttf) format("truetype");
+    src: url(/assets/fonts/466945d7211604ce-s.p.ttf) format("truetype");
     font-display: swap;
     font-weight: 400;
     font-style: normal
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: __firago_124989;
-    src: url(/_next/static/media/b798d743606135c0-s.p.ttf) format("truetype");
+    src: url(/assets/fonts/b798d743606135c0-s.p.ttf) format("truetype");
     font-display: swap;
     font-weight: 500;
     font-style: normal
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: __firago_124989;
-    src: url(/_next/static/media/6f85737fcd0d9143-s.p.ttf) format("truetype");
+    src: url(/assets/fonts/6f85737fcd0d9143-s.p.ttf) format("truetype");
     font-display: swap;
     font-weight: 600;
     font-style: normal
