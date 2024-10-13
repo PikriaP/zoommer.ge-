@@ -4,13 +4,236 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/login.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="icon" href="./photo/Untitled design.png" type="image/png" />
     <title>zoommer.ge</title>
   </head>
   <body>
-    <img src="./photo/main-logo.svg" alt="logo" />
-    <header class="header"></header>
+    <header class="header">
+      <div class="top-bar">
+        <div class="top-bar__content">
+          <a href="" class="top-bar__contact-info">
+            <img
+              class="top-bar__phone-icon"
+              src="./photo/header-phone.svg"
+              alt="Phone Icon"
+            />
+            <span class="top-bar__phone-number"
+              >*7007 / +995 (32) 2 60 30 60</span
+            >
+          </a>
+          <div class="top-bar__links">
+            <ul class="top-bar__link-list custom-font">
+              <li><a href="#trade-politics">სავაჭრო პოლიტიკა</a></li>
+              <li><a href="#installment">განვადება</a></li>
+              <li><a href="#career">კარიერა</a></li>
+              <li><a href="#trade-in">Trade In</a></li>
+              <li><a href="#branches">ფილიალები</a></li>
+              <li><a href="#promotions">ყველა აქცია</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="main-header__content">
+          <!-- responsive -->
+          <div class="main-header__left-side">
+            <img class="burger-menu" src="./photo/burger-icon.svg" alt="Menu" />
+            <img
+              class="main-header__logo"
+              src="./photo/main-logo.svg"
+              alt="Zoommer Logo"
+            />
+          </div>
+          <div class="main-header__right-side">
+            <img src="./photo/search.svg" alt="Search Icon" />
+            <img src="./photo/cart.svg" alt="Cart Icon" />
+            <div class="flag-box__mobile">
+              <img
+                class="flag"
+                src="./photo/flag-geo.png"
+                alt="Georgian Flag"
+              />
+            </div>
+          </div>
+          <div class="header-slide" id="headerSlide" style="display: none">
+            <span class="header-close-btn" id="headerCloseMenu">
+              <img src="./photo/burger-close.svg" alt="Close Icon" />
+            </span>
+            <div class="main-header__search-bar">
+              <img src="./photo/main-search.svg" alt="Search Icon" />
+              <input
+                class="main-header__search-input"
+                type="text"
+                placeholder="ძიება"
+              />
+            </div>
+          </div>
+          <div class="main-header__nav-container">
+            <div class="main-header__nav">
+              <a class="main-header__nav-link" href="#">
+                <img src="./photo/dots.svg" alt="Navigation Icon" />
+                <span class="main-header__nav-text">ნავიგაცია</span>
+              </a>
+            </div>
+            <div class="main-header__search-bar">
+              <img src="./photo/main-search.svg" alt="Search Icon" />
+              <input
+                class="main-header__search-input"
+                type="text"
+                placeholder="ძიება"
+              />
+            </div>
+            <div class="main-header__btn main-header__cart">
+              <img src="./photo/header-cart.svg" alt="Cart Icon" />
+              <p>კალათა</p>
+              <div class="main-header__cart__popup" id="cartPopup">
+                <div class="main-header__cart__popup-text">
+                  <p>კალათა</p>
+                  <p>0 პროდუქტი</p>
+                </div>
+                <img src="./photo/emptybag.svg" alt="Bag Icon" />
+                <span class="cart__total-price">ჯამური ფასი: 0₾</span>
+                <button class="open-cart__btn">
+                  <span>კალათის გახსნა</span>
+                </button>
+              </div>
+            </div>
+            <button class="main-header__btn main-header__login">
+              <img src="./photo/user.svg" alt="User Icon" />
+              <p>შესვლა</p>
+            </button>
+            <div class="flag-box">
+              <button class="flag-btn">
+                <img
+                  class="flag"
+                  src="./photo/flag-geo.png"
+                  alt="Georgian Flag"
+                />
+              </button>
+              <span id="lang" class="lang-options" style="display: none">
+                <a class="lang-option geo-option" href="#geo">GEO</a>
+                <a class="lang-option eng-option" href="#eng">ENG</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section style="height: 4000px"></section>
+    <div class="modal-container">
+      <div class="modal" id="loginModal">
+        <div class="modal-content">
+          <div class="modal-box">
+            <div class="modal-header">
+              <div class="auth-header active" id="authTab">
+                <h4>ავტორიზაცია</h4>
+              </div>
+              <div class="reg-header" id="regTab">
+                <h4>რეგისტრაცია</h4>
+              </div>
+            </div>
+
+            <div class="line-wrapper">
+              <div class="line-half" id="leftLine"></div>
+              <div class="line-half" id="rightLine"></div>
+            </div>
+            <span class="close-btn" id="closeModal">
+              <img src="./photo/mobile-modal-close.svg" alt="Close Icon" />
+            </span>
+            <div class="modal-body">
+              <div class="auth-methods">
+                <div class="auth-box" id="phoneAuth">
+                  <h4>ნომრით ავტორიზაცია</h4>
+                </div>
+                <div class="auth-box" id="emailAuth">
+                  <h4>მეილით ავტორიზაცია</h4>
+                </div>
+              </div>
+              <div class="email-box" style="display: none">
+                <div class="email-input">
+                  <input type="email" placeholder="ელფოსტა" />
+                </div>
+                <div class="password-input">
+                  <input
+                    type="password"
+                    placeholder="პაროლი"
+                    id="passwordInput"
+                  />
+                  <img
+                    class="password-hide-show password-hidden"
+                    src="./photo/hiddenPassword.svg"
+                    alt="Hide Password Icon"
+                  />
+                  <img
+                    class="password-hide-show password-shown"
+                    src="./photo/showPassword.svg"
+                    alt="Show Password Icon"
+                    style="display: none"
+                  />
+                  <a href="#" class="forgot-password">დაგავიწყდა პაროლი?</a>
+                </div>
+              </div>
+              <div class="phone-box">
+                <div class="flag-phone">
+                  <img
+                    src="./photo/flag-geo.png"
+                    alt="Georgian Flag"
+                    class="flag"
+                  />
+                  <p>+995</p>
+                </div>
+                <div class="phone-input">
+                  <input type="text" placeholder="ტელეფონის ნომერი" />
+                </div>
+              </div>
+
+              <div class="agreement-section" style="display: none">
+                <input
+                  type="checkbox"
+                  id="agreementCheckbox"
+                  class="round-checkbox"
+                />
+                <label class="agreement-text" for="agreementCheckbox">
+                  წავიკითხე და ვეთანხმები
+                  <a
+                    href="/info/terms-and-conditions"
+                    target="_blank"
+                    class="agreement-link"
+                    >წესებს, პირობებს და პერსონალურ მონაცემთა დაცვის
+                    პოლიტიკას</a
+                  >
+                </label>
+              </div>
+
+              <button class="send-btn">
+                <span>კოდის გამოგზავნა</span>
+              </button>
+              <div style="border: 1px solid #f2f2f2"></div>
+              <div class="auth-method__other">
+                <h4>ან გაიარე ავტორიზაცია სხვა მეთოდით</h4>
+              </div>
+              <div class="google-signin">
+                <div class="google-icon-box">
+                  <img
+                    class="google-icon"
+                    src="./photo/google-icon.svg"
+                    alt="Google Sign-in"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./header.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
