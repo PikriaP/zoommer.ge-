@@ -84,14 +84,15 @@ a {
     grid-template-columns: 246px calc(100% - 276px);
     column-gap: 30px;
 }
-
+.aside-menu{
+    width: 246px;
+    height: 342px;
+}
 .carousel-slide{
     background-repeat: no-repeat;
     background-size: cover;
-    max-width:fit-content;
-    height: 340px;
-    width: 895px;
-    background-position: inherit;
+    width: 895px !important; 
+    height: 340px !important;
     margin-left: auto;
     margin-right: auto;
     position: relative;
