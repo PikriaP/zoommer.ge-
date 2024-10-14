@@ -129,11 +129,11 @@ a {
   line-height: 35px;
   font-family: __firago_124989;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .footer__title {
   color: var(--black-08);
-
   font-size: 15px;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -215,11 +215,32 @@ footer img {
 
   .footer__description {
     width: 45%;
+    padding: 0px 20px;
   }
+  .scroll {
+    background-color: #73a2d4;
+  }
+  .footer__title {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: __firago_124989;
+  }
+  .footer__list li a {
+    font-size: 10px;
+    font-family: __firago_124989;
+  }
+  .container p {
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 10px;
+   
+  }
+ 
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .footer__description {
     width: 40%;
   }
-}
+} */

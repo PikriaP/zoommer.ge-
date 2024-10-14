@@ -1,4 +1,3 @@
-
 const scrollbtn = document.querySelector(".scroll");
 
 // Initially hide the button
