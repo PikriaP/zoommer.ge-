@@ -156,6 +156,7 @@
                   <h4>მეილით ავტორიზაცია</h4>
                 </div>
               </div>
+
               <div class="email-box" style="display: none">
                 <div class="email-input">
                   <input type="email" placeholder="ელფოსტა" />
@@ -195,12 +196,20 @@
               </div>
 
               <div class="agreement-section" style="display: none">
-                <input
-                  type="checkbox"
-                  id="agreementCheckbox"
-                  class="round-checkbox"
-                />
-                <label class="agreement-text" for="agreementCheckbox">
+                <div class="checkbox-container" id="agreementCheckbox">
+                  <img
+                    class="checkbox"
+                    src="./photo/ellipse-outline.svg"
+                    alt="Ellipse icon"
+                  />
+                  <img
+                    src="./photo/checked-rules.svg"
+                    alt="Checked"
+                    class="checkmark"
+                    style="display: none"
+                  />
+                </div>
+                <div class="agreement-text">
                   წავიკითხე და ვეთანხმები
                   <a
                     href="/info/terms-and-conditions"
@@ -209,10 +218,10 @@
                     >წესებს, პირობებს და პერსონალურ მონაცემთა დაცვის
                     პოლიტიკას</a
                   >
-                </label>
+                </div>
               </div>
 
-              <button class="send-btn">
+              <button class="modal-btn">
                 <span>კოდის გამოგზავნა</span>
               </button>
               <div style="border: 1px solid #f2f2f2"></div>
