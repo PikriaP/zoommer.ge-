@@ -54,78 +54,86 @@
 }
 
 
-body,html {
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-    color: inherit;
-    text-decoration: none
+body {
+  font-family: Arial, sans-serif;
 }
 
-.main-sec{
-    flex-grow: 1;
-    margin: 30px 0px 60px;
+.main-sec {
+  flex-grow: 1;
+  margin: 30px 0 60px;
 }
 
-.main-div{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
+.main-div {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding-top: 130px;
 }
+
 .slider-div {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
 }
+
+/* Aside section (left side) */
+.aside-div {
+  width: 246px;
+  height: 342px;
+  background-color: #f0f0f0; 
+   
+}
+
 .carousel-container {
-    width: 895px;
-    height: 340px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    /* margin: 0 auto; */
-  }
-  .carousel-img {
-    object-fit: cover;
-    width: 100%;
-    height: 340px;
-  }
-  .carousel-slide {
-    object-fit: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 895px;
-    height: 340px;
-}
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    border: none;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-  }
-  .prev-btn {
-    left: 10px;
-  }
-  .next-btn {
-    right: 10px;
-  }
-  .img {
-    width: 50px;
-  }
+  position: relative;
+  width: 894px; 
+  height: 342px; 
+  overflow: hidden; 
+  margin-right: 30px;
   
-.aside-menu{
-    width: 246px;
-    height: 342px;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; 
+}
+
+.carousel-img {
+  min-width: 100%; 
+  height: 342px; 
+  object-fit: cover; 
+}
+
+/* Navigation buttons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent button background */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px;}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
