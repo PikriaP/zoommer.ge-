@@ -44,32 +44,47 @@ const imagesForCarousel = [
     }
   ];
   const slide = document.querySelector(".carousel-slide");
+
+imagesForCarousel.forEach((image) => {
+  const img = document.createElement("img");
+  img.src = image.url;
+  img.alt = image.alt;
+  img.classList.add("carousel-img");
+  slide.appendChild(img);
+});
+
+const images = document.querySelectorAll(".carousel-img");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+
+let currentIndex = 0;
+const totalImages = images.length;
+
+function updateCarousel() {
+  const screenWidth = window.innerWidth;
+
   
-  imagesForCarousel.forEach((image) => {
-    const img = document.createElement("img");
-    img.src = image.url;
-    img.alt = image.alt;
-    img.classList.add("carousel-img");
-    slide.appendChild(img);
-  });
-  
-  const images = document.querySelectorAll(".carousel-img");
-  const prevBtn = document.querySelector(".prev-btn");
-  const nextBtn = document.querySelector(".next-btn");
-  
-  let currentIndex = 0;
-  const totalImages = images.length;
-  
-  function updateCarousel() {
+  if (screenWidth <= 1023) {
+    
+    slide.style.transform = `translateX(-${currentIndex * (291 + 11)}px)`; 
+  } else {
+    
     slide.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
-  
-  prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    updateCarousel();
-  });
-  nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % totalImages;
-    updateCarousel();
-  });
-  
+}
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  updateCarousel();
+});
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % totalImages;
+  updateCarousel();
+});
+
+// Ensure carousel updates on window resize
+window.addEventListener("resize", updateCarousel);
+
+// Call updateCarousel initially
+updateCarousel();
