@@ -260,6 +260,7 @@ a {
     flex-direction: column;
     gap: 1px;
     left: 0;
+    font-family: '__firago_124989', '__firago_Fallback_124989';
   }
 
   .dropdown--left-content {
@@ -306,6 +307,7 @@ a {
     font-size: 12px;
     line-height: 14px;
     color: var(--black-08);
+    font-family: '__firago_124989', '__firago_Fallback_124989';
   }
 
   .dropdown--right-content {
@@ -346,6 +348,24 @@ a {
     inset: 0px;
     color: transparent;
     object-fit: cover;
+  }
+
+  #mobilePhonesButton {
+    background: rgba(242, 242, 242, 0.3);
+    border-left: 2px solid var(--orange-main);
+  }
+
+  .first-button-content {
+    display: block;
+  }
+
+  .second-button-content,
+  .third-button-content,
+  .fourth-button-content,
+  .fifth-button-content,
+  .sixth-button-content,
+  .seventh-button-content {
+    display: none;
   }
 }
 

@@ -309,39 +309,125 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-// document.getElementById('mobilePhonesButton').onclick =
-//   function sectionMobiles() {
-//     var brandsSection = document.getElementsByClassName('dropdown--right-1')
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.dropdown--left-content')
+  const allSections = document.querySelectorAll(
+    '.first-button-content, .second-button-content, .third-button-content, .fourth-button-content, .sixth-button-content, .seventh-button-content, .eighth-button-content'
+  )
 
-// Check if the brands section is currently visible
-// if (
-//   brandsSection.style.display === 'none' ||
-//   brandsSection.style.display === ''
-// ) {
-//   // Show the brands section
-//   brandsSection.style.display = 'block'
-//   brandsSection.style.background = 'rgba(242, 242, 242, 0.3)'
-//   brandsSection.style.borderLeft = '2px solid var(--orange-main)'
-// } else {
-//   // Hide the brands section
-//   brandsSection.style.display = 'none'
-// }
+  function resetAll() {
+    allSections.forEach(function (section) {
+      section.style.display = 'none'
+    })
 
-// if (brandsSection) {
-//   brandsSection.style.background = 'rgba(242, 242, 242, 0.3)'
-//   brandsSection.style.borderLeft = '2px solid var(--orange-main)'
-// }
-// }
+    buttons.forEach(function (button) {
+      button.style.background = 'var(--white-400)'
+      button.style.borderLeft = 'none'
+    })
 
-// Function to show the mobiles section and hide the tablets section
-document.getElementById('mobilePhonesButton').onclick =
-  function sectionMobiles() {
-    document.getElementById('mobileSection').style.display = 'block' // Show mobiles section
-    document.getElementById('tabletsSection').style.display = 'none' // Hide tablets section
+    document.getElementById('mobilePhonesButton').onclick =
+      function sectionMobiles() {
+        resetAll()
+        document
+          .querySelectorAll('.first-button-content')
+          .forEach(function (section) {
+            section.style.display = 'block' // Show the mobile section
+          })
+        document.getElementById('mobilePhonesButton').style.background =
+          'rgba(242, 242, 242, 0.3)'
+        document.getElementById('mobilePhonesButton').style.borderLeft =
+          '2px solid var(--orange-main)'
+      }
   }
 
-// Function to show the tablets section and hide the mobiles section
-document.getElementById('tabsButton').onclick = function () {
-  document.getElementById('mobileSection').style.display = 'none' // Hide mobiles section
-  document.getElementById('tabletsSection').style.display = 'block' // Show tablets section
-}
+  document.getElementById('tabsButton').onclick = function sectionTabs() {
+    resetAll()
+    document
+      .querySelectorAll('.second-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('tabsButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('tabsButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+
+  document.getElementById('laptopsButton').onclick = function sectionLaptops() {
+    resetAll()
+    document
+      .querySelectorAll('.third-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('laptopsButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('laptopsButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+
+  document.getElementById('gadgetsButton').onclick = function sectionGadgets() {
+    resetAll()
+    document
+      .querySelectorAll('.fourth-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('gadgetsButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('gadgetsButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+
+  document.getElementById('audioButton').onclick = function sectionAudio() {
+    resetAll()
+    document
+      .querySelectorAll('.fifth-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('audioButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('audioButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+
+  document.getElementById('gamingButton').onclick = function sectionGaming() {
+    resetAll()
+    document
+      .querySelectorAll('.sixth-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('gamingButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('gamingButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+
+  document.getElementById('tvButton').onclick = function sectionTv() {
+    resetAll()
+    document
+      .querySelectorAll('.seventh-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('tvButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('tvButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+
+  document.getElementById('photoButton').onclick = function sectionPhoto() {
+    resetAll()
+    document
+      .querySelectorAll('.eighth-button-content')
+      .forEach(function (section) {
+        section.style.display = 'block'
+      })
+    document.getElementById('photoButton').style.background =
+      'rgba(242, 242, 242, 0.3)'
+    document.getElementById('photoButton').style.borderLeft =
+      '2px solid var(--orange-main)'
+  }
+})
