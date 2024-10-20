@@ -18,3 +18,14 @@ scrollbtn.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
   console.log(scrollbtn);
 });
+
+
+
+const chatButton = document.querySelector(".chat-button");
+
+
+// Show the chat window when the chat button is clicked
+chatButton.addEventListener("click",function () {
+    chatindow.style.display = "block";
+  
+});
