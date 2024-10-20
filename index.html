@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="stylesheet" href="./CSS/header.css" />
     <link rel="stylesheet" href="./CSS/login.css" />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/fonts.css" />
+    <link rel="stylesheet" href="./CSS/responsiveslider.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <link rel="icon" href="./photo/favicon.ico" type="image/png" />
+    <link rel="icon" href="./assets/photo/favicon.ico" type="image/png" />
     <title>Zoommer.ge</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
           <a href="" class="top-bar__contact-info">
             <img
               class="top-bar__phone-icon"
-              src="./photo/header-phone.svg"
+              src="./assets/photo/header-phone.svg"
               alt="Phone Icon"
             />
             <span class="top-bar__phone-number"
@@ -44,30 +46,34 @@
         <div class="main-header__content">
           <!-- responsive -->
           <div class="main-header__left-side">
-            <img class="burger-menu" src="./photo/burger-icon.svg" alt="Menu" />
+            <img
+              class="burger-menu"
+              src="./assets/photo/burger-icon.svg"
+              alt="Menu"
+            />
             <img
               class="main-header__logo"
-              src="./photo/main-logo.svg"
+              src="./assets/photo/main-logo.svg"
               alt="Zoommer Logo"
             />
           </div>
           <div class="main-header__right-side">
-            <img src="./photo/search.svg" alt="Search Icon" />
-            <img src="./photo/cart.svg" alt="Cart Icon" />
+            <img src="./assets/photo/search.svg" alt="Search Icon" />
+            <img src="./assets/photo/cart.svg" alt="Cart Icon" />
             <div class="flag-box__mobile">
               <img
                 class="flag"
-                src="./photo/flag-geo.png"
+                src="./assets/photo/flag-geo.png"
                 alt="Georgian Flag"
               />
             </div>
           </div>
           <div class="header-slide" id="headerSlide" style="display: none">
             <span class="header-close-btn" id="headerCloseMenu">
-              <img src="./photo/burger-close.svg" alt="Close Icon" />
+              <img src="./assets/photo/burger-close.svg" alt="Close Icon" />
             </span>
             <div class="main-header__search-bar">
-              <img src="./photo/main-search.svg" alt="Search Icon" />
+              <img src="./assets/photo/main-search.svg" alt="Search Icon" />
               <input
                 class="main-header__search-input"
                 type="text"
@@ -78,12 +84,12 @@
           <div class="main-header__nav-container">
             <div class="main-header__nav">
               <a class="main-header__nav-link" href="#">
-                <img src="./photo/dots.svg" alt="Navigation Icon" />
+                <img src="./assets/photo/dots.svg" alt="Navigation Icon" />
                 <span class="main-header__nav-text">ნავიგაცია</span>
               </a>
             </div>
             <div class="main-header__search-bar">
-              <img src="./photo/main-search.svg" alt="Search Icon" />
+              <img src="./assets/photo/main-search.svg" alt="Search Icon" />
               <input
                 class="main-header__search-input"
                 type="text"
@@ -91,14 +97,14 @@
               />
             </div>
             <div class="main-header__btn main-header__cart">
-              <img src="./photo/header-cart.svg" alt="Cart Icon" />
+              <img src="./assets/photo/header-cart.svg" alt="Cart Icon" />
               <p>კალათა</p>
               <div class="main-header__cart__popup" id="cartPopup">
                 <div class="main-header__cart__popup-text">
                   <p>კალათა</p>
                   <p>0 პროდუქტი</p>
                 </div>
-                <img src="./photo/emptybag.svg" alt="Bag Icon" />
+                <img src="./assets/photo/emptybag.svg" alt="Bag Icon" />
                 <span class="cart__total-price">ჯამური ფასი: 0₾</span>
                 <button class="open-cart__btn">
                   <span>კალათის გახსნა</span>
@@ -106,14 +112,14 @@
               </div>
             </div>
             <button class="main-header__btn main-header__login">
-              <img src="./photo/user.svg" alt="User Icon" />
+              <img src="./assets/photo/user.svg" alt="User Icon" />
               <p>შესვლა</p>
             </button>
             <div class="flag-box">
               <button class="flag-btn">
                 <img
                   class="flag"
-                  src="./photo/flag-geo.png"
+                  src="./assets/photo/flag-geo.png"
                   alt="Georgian Flag"
                 />
               </button>
@@ -1167,7 +1173,10 @@
               <div class="line-half" id="rightLine"></div>
             </div>
             <span class="close-btn" id="closeModal">
-              <img src="./photo/mobile-modal-close.svg" alt="Close Icon" />
+              <img
+                src="./assets/photo/mobile-modal-close.svg"
+                alt="Close Icon"
+              />
             </span>
             <div class="modal-body">
               <div class="auth-methods">
@@ -1191,12 +1200,12 @@
                   />
                   <img
                     class="password-hide-show password-hidden"
-                    src="./photo/hiddenPassword.svg"
+                    src="./assets/photo/hiddenPassword.svg"
                     alt="Hide Password Icon"
                   />
                   <img
                     class="password-hide-show password-shown"
-                    src="./photo/showPassword.svg"
+                    src="./assets/photo/showPassword.svg"
                     alt="Show Password Icon"
                     style="display: none"
                   />
@@ -1206,7 +1215,7 @@
               <div class="phone-box">
                 <div class="flag-phone">
                   <img
-                    src="./photo/flag-geo.png"
+                    src="./assets/photo/flag-geo.png"
                     alt="Georgian Flag"
                     class="flag"
                   />
@@ -1221,11 +1230,11 @@
                 <div class="checkbox-container" id="agreementCheckbox">
                   <img
                     class="checkbox"
-                    src="./photo/ellipse-outline.svg"
+                    src="./assets/photo/ellipse-outline.svg"
                     alt="Ellipse icon"
                   />
                   <img
-                    src="./photo/checked-rules.svg"
+                    src="./assets/photo/checked-rules.svg"
                     alt="Checked"
                     class="checkmark"
                     style="display: none"
@@ -1254,7 +1263,7 @@
                 <div class="google-icon-box">
                   <img
                     class="google-icon"
-                    src="./photo/google-icon.svg"
+                    src="./assets/photo/google-icon.svg"
                     alt="Google Sign-in"
                   />
                 </div>
@@ -1264,7 +1273,24 @@
         </div>
       </div>
     </div>
+    <!-- main section -->
+    <!-- main div -->
+
+    <!-- main slider div -->
+
+    <div class="main-div">
+      <div class="slider-div">
+        <div class="aside-div">Aside Content</div>
+        <div class="carousel-container">
+          <div class="carousel-slide"></div>
+          <button class="prev-btn"></button>
+          <button class="next-btn"></button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./headerScripts/header.js"></script>
-    <script src="./script.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -1,22 +1,8 @@
-@font-face {
-  font-family: customFont1;
-  src: url(../fonts/font1-s.p.ttf);
-}
-
-@font-face {
-  font-family: customFont2;
-  src: url(../fonts/font2-s.p.ttf);
-}
-
-@font-face {
-  font-family: customFont3;
-  src: url(../fonts/font3-s.p.ttf);
-}
-
 /* HEADER */
 header {
-  font-family: "customFont2", sans-serif;
+  font-family: __firago_124989;
   font-size: 12px;
+  font-weight: 500;
 }
 
 /* TOP BAR */
@@ -167,6 +153,8 @@ header {
   opacity: 0.8;
   filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 10px);
   cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .main-header__btn:hover {
@@ -260,14 +248,14 @@ header {
 }
 
 .main-header__cart__popup {
+  position: absolute;
   width: 355px;
   max-height: 338px;
   background: var(--white-main);
   box-shadow: rgba(0, 0, 0, 0.2) 2px 4px 4px;
-  position: absolute;
   top: 50px;
   left: -7px;
-  z-index: 20;
+  z-index: 999999;
   border-radius: 12px;
   padding: 16px 20px;
   display: flex;
@@ -303,6 +291,8 @@ header {
   border-radius: 12px;
   align-self: center;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .open-cart__btn span {
@@ -321,7 +311,7 @@ header {
 
 /* Navigation -> all category*/
 .all-category-section {
-  font-family: customFont2;
+  font-family: __firago_124989;
   padding: 40px 0 30px;
   display: flex;
   justify-content: center;
@@ -336,6 +326,7 @@ header {
   border-bottom: 2px solid #ddd;
   color: rgb(10, 50, 81);
   font-size: 16px;
+  font-weight: 500;
 }
 
 .all-category-nav {
@@ -353,7 +344,6 @@ header {
   text-decoration: none;
   color: rgb(10, 50, 81);
   font-size: 14px;
-  opacity: 0.7;
   transition: color 0.2s ease-in-out;
 }
 
@@ -363,6 +353,7 @@ header {
   cursor: pointer;
   font-size: 18px;
   transition: color 0.2s ease-in-out;
+  font-weight: 600;
 }
 
 .category ul {

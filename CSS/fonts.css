@@ -1,0 +1,36 @@
+@font-face {
+    font-family: __firago_124989;
+    src: url(/assets/fonts/466945d7211604ce-s.p.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __firago_124989;
+    src: url(/assets/fonts/b798d743606135c0-s.p.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __firago_124989;
+    src: url(/assets/fonts/6f85737fcd0d9143-s.p.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __firago_Fallback_124989;
+    src: local("Arial");
+    ascent-override:91.34%;descent-override:25.89%;line-gap-override:0.00%;size-adjust:102.36%}
+
+.__className_124989 {
+    font-family: __firago_124989,__firago_Fallback_124989
+}
+
+.__variable_124989 {
+    --font-firago: "__firago_124989","__firago_Fallback_124989"
+}
