@@ -1,0 +1,40 @@
+
+/* Responsive Layout */
+@media (max-width: 1023px) {
+    .slider-div {
+      flex-direction: row;
+      display: flex;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      background-color: var(--white-400);
+      margin-right: -20px;
+    }
+  
+    .aside-div {
+     display: none;
+    }
+  
+    .carousel-container {
+      width: 1002.4px;
+      height: 135px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .carousel-slide {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+    }
+  
+    .carousel-img {
+      width: 291px !important;
+      height: 135px !important;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  
+    .carousel-img:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
