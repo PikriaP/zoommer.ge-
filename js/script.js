@@ -1,3 +1,6 @@
+"use strict";
+
+
 //mobiles
 document.addEventListener('DOMContentLoaded', function () {
   const mobilesContainer = document.querySelector('.mobiles')
@@ -431,3 +434,6 @@ document.addEventListener('DOMContentLoaded', function () {
       '2px solid var(--orange-main)'
   }
 })
+
+
+
