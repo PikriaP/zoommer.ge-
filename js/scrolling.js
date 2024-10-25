@@ -19,6 +19,15 @@ scrollbtn.addEventListener("click", function () {
   console.log(scrollbtn);
 });
 
+const chatButton = document.querySelector(".chat-button");
+const chatWindow = document.querySelector(".chat-window");
 
+// Show the chat window when clicking the chat button
+chatButton.addEventListener("click", () => {
+  chatWindow.style.display = "block";
+});
 
-
+const closeWindow = document.querySelector(".close-window");
+closeWindow.addEventListener("click", () => {
+  chatWindow.style.display = "none";
+});
