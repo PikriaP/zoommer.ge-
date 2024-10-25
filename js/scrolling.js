@@ -21,11 +21,4 @@ scrollbtn.addEventListener("click", function () {
 
 
 
-const chatButton = document.querySelector(".chat-button");
 
-
-// Show the chat window when the chat button is clicked
-chatButton.addEventListener("click",function () {
-    chatindow.style.display = "block";
-  
-});

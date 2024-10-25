@@ -51,7 +51,6 @@
   --product-floatBar-oldPrice-black: #fff;
 }
 
-
 body,
 html {
   min-height: 100vh;
@@ -64,9 +63,7 @@ html {
 a {
   color: inherit;
   text-decoration: none;
-
 }
-
 
 * {
   margin: 0;
@@ -76,7 +73,6 @@ a {
 
 body {
   font-family: Arial, sans-serif;
-
 }
 
 .main-sec {
@@ -135,9 +131,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-
-
-
+  position: relative;
 }
 
 .line {
@@ -157,7 +151,7 @@ body {
 
 .footer__title {
   color: var(--black-08);
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 15px;
   margin-top: 15px;
   font-family: __firago_124989;
@@ -180,7 +174,7 @@ footer img {
 
 .last-text p {
   color: var(--black-06);
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 5px;
   padding: 5px;
 }
@@ -190,7 +184,12 @@ footer img {
 }
 
 .logo {
-  margin-left: 20px;
+  margin-right: -20px;
+  position: absolute;
+  right: 0;
+  height: 25px;
+  width: 135px;
+  bottom: 20px;
 }
 
 .chat-button {
@@ -252,12 +251,18 @@ footer img {
   .footer__list li a {
     font-size: 10px;
     font-family: __firago_124989;
+  
   }
   .container p {
     font-size: 10px;
     padding: 10px;
     margin-left: 10px;
   }
+  .logo {
+    left: 0;
+    bottom: 0;
+  }
+ 
 }
 
 /* @media (max-width: 500px) {
@@ -266,13 +271,13 @@ footer img {
   }
 } */
 
-.main-sec{
+.main-sec {
   margin: 30px 0 60px;
 }
 
 .main-div {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 130px;
   padding: 115px 15px;
@@ -290,45 +295,45 @@ footer img {
 .aside-div {
   width: 246px;
   height: 342px;
-  background-color: #f0f0f0; 
-   
+  background-color: #f0f0f0;
 }
 
 .carousel-container {
   position: relative;
   border-radius: 15px;
-  width: 894px; 
-  height: 342px; 
-  overflow: hidden; 
+  width: 894px;
+  height: 342px;
+  overflow: hidden;
   /* margin-right: 30px; */
-  
 }
 
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%; 
+  width: 100%;
 }
 
 .carousel-img {
-  max-width: 100%; 
-  height: 342px; 
-  object-fit: cover; 
+  max-width: 100%;
+  height: 342px;
+  object-fit: cover;
 }
 
 /* Navigation buttons */
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   border-radius: 50px;
   padding: 10px;
   cursor: pointer;
   z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px;}
+  box-shadow: rgba(0, 0, 0, 0.2) 0px;
+}
 
 .prev-btn {
   background-image: url(https://zoommer.ge/icons/slider-left-btn.svg);
@@ -346,7 +351,7 @@ footer img {
   right: 10px;
 }
 
-.prev-btn:hover, .next-btn:hover {
+.prev-btn:hover,
+.next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
