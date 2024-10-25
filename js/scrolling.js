@@ -27,7 +27,7 @@ chatButton.addEventListener("click", () => {
   chatWindow.style.display = "block";
 });
 
-const closeWindow = document.querySelector(".close-window");
-closeWindow.addEventListener("click", () => {
-  chatWindow.style.display = "none";
-});
+// const closeWindow = document.querySelector(".close-window");
+// closeWindow.addEventListener("click", () => {
+//   chatWindow.style.display = "none";
+// });
