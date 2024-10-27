@@ -1,20 +1,1279 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="./CSS/fonts.css">
-    <link rel="stylesheet" href="./CSS/responsiveslider.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="icon" href="./photo/Untitled design.png" type="image/png">
-
-    <title>zoommer.ge</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/login.css" />
+    <link rel="stylesheet" href="./CSS/fonts.css" />
+    <link rel="stylesheet" href="./CSS/responsiveslider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="./assets/photo/favicon.ico" type="image/png" />
+    <title>Zoommer.ge</title>
   </head>
   <body>
+    <header class="header">
+      <div class="top-bar">
+        <div class="top-bar__content">
+          <a href="" class="top-bar__contact-info">
+            <img
+              class="top-bar__phone-icon"
+              src="./assets/photo/header-phone.svg"
+              alt="Phone Icon"
+            />
+            <span class="top-bar__phone-number"
+              >*7007 / +995 (32) 2 60 30 60</span
+            >
+          </a>
+          <div class="top-bar__links">
+            <ul class="top-bar__link-list custom-font">
+              <li><a href="#trade-politics">სავაჭრო პოლიტიკა</a></li>
+              <li><a href="#installment">განვადება</a></li>
+              <li><a href="#career">კარიერა</a></li>
+              <li><a href="#trade-in">Trade In</a></li>
+              <li><a href="#branches">ფილიალები</a></li>
+              <li><a href="#promotions">ყველა აქცია</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="main-header__content">
+          <!-- responsive -->
+          <div class="main-header__left-side">
+            <img
+              class="burger-menu"
+              src="./assets/photo/burger-icon.svg"
+              alt="Menu"
+            />
+            <img
+              class="main-header__logo"
+              src="./assets/photo/main-logo.svg"
+              alt="Zoommer Logo"
+            />
+          </div>
+          <div class="main-header__right-side">
+            <img src="./assets/photo/search.svg" alt="Search Icon" />
+            <img src="./assets/photo/cart.svg" alt="Cart Icon" />
+            <div class="flag-box__mobile">
+              <img
+                class="flag"
+                src="./assets/photo/flag-geo.png"
+                alt="Georgian Flag"
+              />
+            </div>
+          </div>
+          <div class="header-slide" id="headerSlide" style="display: none">
+            <span class="header-close-btn" id="headerCloseMenu">
+              <img src="./assets/photo/burger-close.svg" alt="Close Icon" />
+            </span>
+            <div class="main-header__search-bar">
+              <img src="./assets/photo/main-search.svg" alt="Search Icon" />
+              <input
+                class="main-header__search-input"
+                type="text"
+                placeholder="ძიება"
+              />
+            </div>
+          </div>
+          <div class="main-header__nav-container">
+            <div class="main-header__nav">
+              <a class="main-header__nav-link" href="#">
+                <img src="./assets/photo/dots.svg" alt="Navigation Icon" />
+                <span class="main-header__nav-text">ნავიგაცია</span>
+              </a>
+            </div>
+            <div class="main-header__search-bar">
+              <img src="./assets/photo/main-search.svg" alt="Search Icon" />
+              <input
+                class="main-header__search-input"
+                type="text"
+                placeholder="ძიება"
+              />
+            </div>
+            <div class="main-header__btn main-header__cart">
+              <img src="./assets/photo/header-cart.svg" alt="Cart Icon" />
+              <p>კალათა</p>
+              <div class="main-header__cart__popup" id="cartPopup">
+                <div class="main-header__cart__popup-text">
+                  <p>კალათა</p>
+                  <p>0 პროდუქტი</p>
+                </div>
+                <img src="./assets/photo/emptybag.svg" alt="Bag Icon" />
+                <span class="cart__total-price">ჯამური ფასი: 0₾</span>
+                <button class="open-cart__btn">
+                  <span>კალათის გახსნა</span>
+                </button>
+              </div>
+            </div>
+            <button class="main-header__btn main-header__login">
+              <img src="./assets/photo/user.svg" alt="User Icon" />
+              <p>შესვლა</p>
+            </button>
+            <div class="flag-box">
+              <button class="flag-btn">
+                <img
+                  class="flag"
+                  src="./assets/photo/flag-geo.png"
+                  alt="Georgian Flag"
+                />
+              </button>
+              <span id="lang" class="lang-options" style="display: none">
+                <a class="lang-option geo-option" href="#geo">GEO</a>
+                <a class="lang-option eng-option" href="#eng">ENG</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     
+    <section class="all-category-section" style="display: none">
+      <div class="all-category-container">
+        <h1>ყველა კატეგორია</h1>
+        <nav class="all-category-nav">
+          <div class="category">
+            <h3>Canon</h3>
+            <ul>
+              <li><a href="#">Instant</a></li>
+              <li>
+                <a href="#">EOS DSLR</a>
+              </li>
+              <li>
+                <a href="#">Compact</a>
+              </li>
+              <li>
+                <a href="#">Mirrorless</a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>აუდიო სისტემა</h3>
+            <ul>
+              <li><a href="#">Polaroid</a></li>
+              <li>
+                <a href="#">Havit</a>
+              </li>
+              <li>
+                <a href="#">Bowers & Wilkins</a>
+              </li>
+              <li>
+                <a href="#">House of Marley</a>
+              </li>
+              <li>
+                <a href="#">Lenovo</a>
+              </li>
+              <li>
+                <a href="#">Anker</a>
+              </li>
+              <li>
+                <a href="#">Razer</a>
+              </li>
+              <li>
+                <a href="#">HyperX</a>
+              </li>
+              <li>
+                <a href="#">Acer</a>
+              </li>
+              <li>
+                <a href="#">Asus</a>
+              </li>
+              <li>
+                <a href="#">Skullcandy</a>
+              </li>
+              <li>
+                <a href="#">Apple</a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#">Xiaomi</a>
+              </li>
+              <li>
+                <a href="#">Trust</a>
+              </li>
+              <li>
+                <a href="#">Realme</a>
+              </li>
+              <li>
+                <a href="#">Beats</a>
+              </li>
+              <li>
+                <a href="#">Hoco</a>
+              </li>
+              <li>
+                <a href="#">Samsung</a>
+              </li>
+              <li>
+                <a href="#">Audio-Technica</a>
+              </li>
+              <li>
+                <a href="#">Jabra</a>
+              </li>
+              <li>
+                <a href="#">Bose</a>
+              </li>
+              <li>
+                <a href="#">Sennheiser</a>
+              </li>
+              <li>
+                <a href="#">Urbanears</a>
+              </li>
+              <li>
+                <a href="#">HP</a>
+              </li>
+              <li>
+                <a href="#">JBL</a>
+              </li>
+              <li>
+                <a href="#">Marshall</a>
+              </li>
+              <li>
+                <a href="#">Baseus</a>
+              </li>
+              <li>
+                <a href="#">Sony</a>
+              </li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სხვა კონსოლები</h3>
+            <ul>
+              <li><a href="#">Steam Deck</a></li>
+              <li><a href="#">Asus ROG</a></li>
+              <li><a href="#">კონსოლის აქსესუარები</a></li>
+              <li><a href="#">Game Boy</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">Oculus</a></li>
+              <li><a href="#">Backbone</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>გრაფიკული ტაბები</h3>
+            <ul>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Wicue</a></li>
+              <li><a href="#">XP-Pen</a></li>
+              <li><a href="#">Pen Display</a></li>
+              <li><a href="#">Pen Tablet</a></li>
+              <li><a href="#">Huion</a></li>
+              <li><a href="#">Veikk</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>კაბელები</h3>
+            <ul>
+              <li><a href="#">Micro USB</a></li>
+              <li><a href="#">Lightning</a></li>
+              <li><a href="#">HDMI კაბელები</a></li>
+              <li><a href="#">Type-C</a></li>
+              <li><a href="#">AUX</a></li>
+              <li><a href="#">LAN კაბელები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მობილურის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">მობილური კამერის ლინზები</a></li>
+              <li><a href="#">SIM ადაპტერები</a></li>
+              <li><a href="#">სელფის ჯოხები</a></li>
+              <li><a href="#">დამტენი ადაპტერები</a></li>
+              <li><a href="#">გარე დამტენები</a></li>
+              <li><a href="#">მანქანის დამტენები</a></li>
+              <li><a href="#">ეკრანის დამცავები</a></li>
+              <li><a href="#">კონექტორები</a></li>
+              <li><a href="#">მობილურის ჩასადებები</a></li>
+              <li><a href="#">ყურსასმენები</a></li>
+              <li><a href="#">Micro SD მეხსიერების ბარათები</a></li>
+              <li><a href="#">ყურის ბლუთუსები</a></li>
+              <li><a href="#">OTG ფლეშ მეხსიერება</a></li>
+              <li><a href="#">კაბელების ორგანაიზერი</a></li>
+              <li><a href="#">მანქანის სამაგრები</a></li>
+              <li><a href="#">მობილურის სამაგრები</a></li>
+              <li><a href="#">უსადენო დამტენები</a></li>
+              <li><a href="#">კაბელები</a></li>
+              <li><a href="#">GPS ტრეკერების აქსესუარები</a></li>
+              <li><a href="#">GPS ტრეკერები</a></li>
+              <li><a href="#">სათამაშო ტრიგერები</a></li>
+              <li><a href="#">მობილურის ბეჭდები</a></li>
+              <li><a href="#">კამერის დამცავები</a></li>
+              <li><a href="#">USB ჰაბები</a></li>
+              <li><a href="#">მობილურის სტაბილიზატორები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მონიტორინგი</h3>
+            <ul>
+              <li><a href="#">ვიდეორეგისტრატორის აქსესუარები</a></li>
+              <li><a href="#">სმარტ ჰაბები</a></li>
+              <li><a href="#">IT კამერები</a></li>
+              <li><a href="#">Doorbell</a></li>
+              <li><a href="#">მოძრაობის სენსორები</a></li>
+              <li><a href="#">ტემპერატურის ინდიკატორები</a></li>
+              <li><a href="#">განათების სენსორები</a></li>
+              <li><a href="#">სარტ ჩამრთველები</a></li>
+              <li><a href="#">კარის ჭკვიანი საკეტი</a></li>
+              <li><a href="#">GPS ტრეკერები</a></li>
+              <li><a href="#">ვიდეო რეგისტრატორები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ კლავიატურა და კალამი</h3>
+            <ul>
+              <li><a href="#">Apple კალამი</a></li>
+              <li><a href="#">Baseus კალამი</a></li>
+              <li><a href="#">Xiaomi კლავიატურა</a></li>
+              <li><a href="#">Uniq კალამი</a></li>
+              <li><a href="#">Microsoft კალამი</a></li>
+              <li><a href="#">Apple კლავიატურა</a></li>
+              <li><a href="#">Microsoft კლავიატურა</a></li>
+              <li><a href="#">Baseus კლავიატურა</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Gaming მონიტორები</h3>
+            <ul>
+              <li><a href="#">BenQ</a></li>
+              <li><a href="#">MSI</a></li>
+              <li><a href="#">Acer Nitro</a></li>
+              <li><a href="#">Lenovo Legion</a></li>
+              <li><a href="#">HP</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Dell</a></li>
+              <li><a href="#">Samsung Odyssey</a></li>
+              <li><a href="#">Asus</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>პლანშეტის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">Micro SD მეხსიერების ბარათები</a></li>
+              <li><a href="#">პლანშეტის სადგამი</a></li>
+              <li><a href="#">კონექტორები</a></li>
+              <li><a href="#">პლანშეტის კლავიატურები</a></li>
+              <li><a href="#">სმარტ კალმის აქსესუარები</a></li>
+              <li><a href="#">პლანშეტების ქეისები</a></li>
+              <li><a href="#">USB კაბელები</a></li>
+              <li><a href="#">დამტენი ადაპტერები</a></li>
+              <li><a href="#">OTG ფლეშ მეხსიერება</a></li>
+              <li><a href="#">გარე დამტენები</a></li>
+              <li><a href="#">ეკრანის დამცავები</a></li>
+              <li><a href="#">სმარტ კალამი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მეხსიერების მატარებლები</h3>
+            <ul>
+              <li><a href="#">პორტატული HDD</a></li>
+              <li><a href="#">ფლეშ მეხსიერებები</a></li>
+              <li><a href="#">პორტატული SSD</a></li>
+              <li><a href="#">მეხსიერების ბარათები</a></li>
+              <li><a href="#">შიდა SSD</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>თავის მოვლა</h3>
+            <ul>
+              <li><a href="#">წვერსაპარსის თავაკები</a></li>
+              <li><a href="#">კბილის ჯაგრისის თავები</a></li>
+              <li><a href="#">ცხვირის ტრიმერი</a></li>
+              <li><a href="#">ფრჩხილების მოვლა</a></li>
+              <li><a href="#">კანის მოვლის საშუალებები</a></li>
+              <li><a href="#">წვერსაპარსი</a></li>
+              <li><a href="#">ტრიმერები</a></li>
+              <li><a href="#">ტანსაცმლის უთო</a></li>
+              <li><a href="#">თმის უთო</a></li>
+              <li><a href="#">სარბენი ბილიკები</a></li>
+              <li><a href="#">ლაქების მოსაშორებელი</a></li>
+              <li><a href="#">კბილის ჯაგრისი</a></li>
+              <li><a href="#">თმის ფენი</a></li>
+              <li><a href="#">სასწორი</a></li>
+              <li><a href="#">კბილის პასტის საწური</a></li>
+              <li><a href="#">ეპილატორები</a></li>
+              <li><a href="#">თხევადი ხელის საპონი</a></li>
+              <li><a href="#">საპნის დისპენსერი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სახლის მოვლა</h3>
+            <ul>
+              <li><a href="#">მტვერსასრუტის აქსესუარები</a></li>
+              <li><a href="#">მინის საწმენდი რობოტები</a></li>
+              <li><a href="#">ჰაერის გამწმენდის აქსესუარები</a></li>
+              <li><a href="#">ჰაერის გამწმენდი</a></li>
+              <li><a href="#">პორტატული მტვერსასრუტები</a></li>
+              <li><a href="#">ხელის მტვერსასრუტები</a></li>
+              <li><a href="#">რობოტი მტვერსასრუტები</a></li>
+              <li><a href="#">ჰაერის დამატენიანებლები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მისაღები</h3>
+            <ul>
+              <li><a href="#">მედია პლეერები</a></li>
+              <li><a href="#">ტელევიზორები</a></li>
+              <li><a href="#">Wi-Fi როუტერები</a></li>
+              <li><a href="#">განათება</a></li>
+              <li><a href="#">ჰაერის გამწმენდი</a></li>
+              <li><a href="#">სმარტ ასისტენტები</a></li>
+              <li><a href="#">პროექტორები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მანქანის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">მანქანის ურნა</a></li>
+              <li><a href="#">მანქანის დამტენები</a></li>
+              <li><a href="#">მანქანის აქსესუარები</a></li>
+              <li><a href="#">მანქანის არომატიზატორები</a></li>
+              <li><a href="#">სახრახნისები</a></li>
+              <li><a href="#">სანომრე ბარათი</a></li>
+              <li><a href="#">მანქანის სარეცხი აქსესუარები</a></li>
+              <li><a href="#">მანქანის სამაგრები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>რაცია</h3>
+            <ul>
+              <li><a href="#">რაცია</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ საათები</h3>
+            <ul>
+              <li><a href="#">Nothing Watch</a></li>
+              <li><a href="#">Google Watch</a></li>
+              <li><a href="#">Amazfit Watch</a></li>
+              <li><a href="#">Canyon Watch</a></li>
+              <li><a href="#">OnePlus Watch</a></li>
+              <li><a href="#">Realme Watch</a></li>
+              <li><a href="#">Honor Watch</a></li>
+              <li><a href="#">Lenovo Watch</a></li>
+              <li><a href="#">Huawei Watch</a></li>
+              <li><a href="#">ZTE Watch</a></li>
+              <li><a href="#">Porodo Watch</a></li>
+              <li><a href="#">Garmin Watch</a></li>
+              <li><a href="#">Haylou</a></li>
+              <li><a href="#">Kieslect</a></li>
+              <li><a href="#">Omthing</a></li>
+              <li><a href="#">სმარტ საათის აქსესუარები</a></li>
+              <li><a href="#">Xiaomi Watch</a></li>
+              <li><a href="#">Galaxy Watch</a></li>
+              <li><a href="#">Apple Watch</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>პლანშეტები</h3>
+            <ul>
+              <li><a href="#">OnePlus</a></li>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Amazon</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">Apple</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Realme</a></li>
+              <li><a href="#">Alcatel</a></li>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">Honor</a></li>
+              <li><a href="#">Huawei</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სამგზავრო ჩემოდანი</h3>
+            <ul>
+              <li><a href="#">სამგზავრო ჩანთები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ყურსასმენები</h3>
+            <ul>
+              <li><a href="#">ყურსასმენის აქსესუარები</a></li>
+              <li><a href="#">ყურსასმენები - Gaming</a></li>
+              <li><a href="#">ქოლცენტრის ყურსასმენები</a></li>
+              <li><a href="#">ყურსასმენები - Earphones</a></li>
+              <li><a href="#">ყურსასმენები - Headphones</a></li>
+              <li><a href="#">ყურსასმენები - Wireless</a></li>
+              <li><a href="#">ყურის ბლუთუსები</a></li>
+              <li><a href="#">საბავშვო ყურსასმენები</a></li>
+              <li><a href="#">ყურსასმენები - Buds</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მონიტორები</h3>
+            <ul>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">MSI</a></li>
+              <li><a href="#">Dell</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Philips</a></li>
+              <li><a href="#">AOC</a></li>
+              <li><a href="#">Acer</a></li>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">HP</a></li>
+              <li><a href="#">BenQ</a></li>
+              <li><a href="#">All-in-One</a></li>
+              <li><a href="#">2E</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>All-in-One</h3>
+            <ul>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">Apple iMac</a></li>
+              <li><a href="#">Dell</a></li>
+              <li><a href="#">HP</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>დრონები და აქსესუარები</h3>
+            <ul>
+              <li><a href="#">დრონების აქსესუარები</a></li>
+              <li><a href="#">DJI დრონები</a></li>
+              <li><a href="#">FPV Goggles</a></li>
+              <li><a href="#">დრონები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ფოტო პრინტერის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">ფოტო პრინტერის ჩანთები</a></li>
+              <li><a href="#">ფოტო პრინტერის ალბომები</a></li>
+              <li><a href="#">ფოტო პრინტერის ლინზები</a></li>
+              <li><a href="#">ფოტო პრინტერის ფურცლები</a></li>
+              <li><a href="#">ფოტო პრინტერის strap-ები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მობილური ტელეფონები</h3>
+            <ul>
+              <li><a href="#">Poco</a></li>
+              <li><a href="#">Apple</a></li>
+              <li><a href="#">Motorola</a></li>
+              <li><a href="#">Blackberry</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">CAT</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Nokia</a></li>
+              <li><a href="#">ZTE</a></li>
+              <li><a href="#">Realme</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Vivo</a></li>
+              <li><a href="#">Nothing</a></li>
+              <li><a href="#">Oneplus</a></li>
+              <li><a href="#">FLY</a></li>
+              <li><a href="#">Google</a></li>
+              <li><a href="#">Honor</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ საათის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">სმარტ საათის სამაჯურები</a></li>
+              <li><a href="#">სმარტ საათის ეკრანის დამცავები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>USER MANUAL</h3>
+            <ul>
+              <li><a href="#">Realme</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ლეპტოპის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">ლეპტოპის კლავიატურის დამცავები</a></li>
+              <li><a href="#">პორტატული HDD</a></li>
+              <li><a href="#">შიდა SSD</a></li>
+              <li><a href="#">Streaming მიკროფონები</a></li>
+              <li><a href="#">დენის დამაგრძელებლები</a></li>
+              <li><a href="#">დინამიკები</a></li>
+              <li><a href="#">ლეპტოპის დამტენი</a></li>
+              <li><a href="#">Web კამერები</a></li>
+              <li><a href="#">ლეპტოპის ჩანთები</a></li>
+              <li><a href="#">მაუსები</a></li>
+              <li><a href="#">მონიტორის საწმენდები</a></li>
+              <li><a href="#">კლავიატურები</a></li>
+              <li><a href="#">გამაგრილებელი პედები</a></li>
+              <li><a href="#">ლეპტოპის ქეისები</a></li>
+              <li><a href="#">Dock Station</a></li>
+              <li><a href="#">ლეპტოპის ეკრანის დამცავები</a></li>
+              <li><a href="#">Wi-Fi როუტერები</a></li>
+              <li><a href="#">ფლეშ მეხსიერებები</a></li>
+              <li><a href="#">მაგიდები</a></li>
+              <li><a href="#">პორტატული SSD</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ მოწყობილობები</h3>
+            <ul>
+              <li><a href="#">სმარტ ასისტენტები</a></li>
+              <li><a href="#">ტემპერატურის ინდიკატორები</a></li>
+              <li><a href="#">სმარტ ნათურები</a></li>
+              <li><a href="#">განათების სენსორები</a></li>
+              <li><a href="#">მოძრაობის სენსორები</a></li>
+              <li><a href="#">ჭკვიანი ონკანი</a></li>
+              <li><a href="#">სმარტ ჰაბები</a></li>
+              <li><a href="#">სმარტ გამათბობელი</a></li>
+              <li><a href="#">სმარტ დინამიკები</a></li>
+              <li><a href="#">Doorbell</a></li>
+              <li><a href="#">Eco Home</a></li>
+              <li><a href="#">Nest Wi-Fi</a></li>
+              <li><a href="#">Nest Mini</a></li>
+              <li><a href="#">TV Box</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>შინაური ცხოველები</h3>
+            <ul>
+              <li>
+                <a href="#">საკვებისა და წყლის დისპენსერის აქსესუარები</a>
+              </li>
+              <li><a href="#">წყლის დისპენსერი</a></li>
+              <li><a href="#">საკვების დისპენსერი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Ebook</h3>
+            <ul>
+              <li><a href="#">Kindle</a></li>
+              <li><a href="#">BOOX</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ფოტო, ვიდეო აქსესუარები</h3>
+            <ul>
+              <li><a href="#">ფოტოაპარატის ჩანთები</a></li>
+              <li><a href="#">შტატივები</a></li>
+              <li><a href="#">ლინზები</a></li>
+              <li><a href="#">მეხსიერების ბარათები</a></li>
+              <li><a href="#">Gimbal სტაბილიზატორები</a></li>
+              <li><a href="#">სტუდიური განათებები</a></li>
+              <li><a href="#">Speedlite განათებები</a></li>
+              <li><a href="#">კამერის სტაბილიზატორები</a></li>
+              <li><a href="#">მობილურის სტაბილიზატორები</a></li>
+              <li><a href="#">უსადენო მიკროფონები</a></li>
+              <li><a href="#">ფოტოაპარატის მიკროფონები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Xbox</h3>
+            <ul>
+              <li><a href="#">Xbox-ის კონტროლერები</a></li>
+              <li><a href="#">Xbox-ის თამაშები</a></li>
+              <li><a href="#">Xbox-ის აქსესუარები</a></li>
+              <li><a href="#">Xbox</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სამზარეულო</h3>
+            <ul>
+              <li><a href="#">პურის საცხობი</a></li>
+              <li><a href="#">ჩაიდანი</a></li>
+              <li><a href="#">წვენსაწური</a></li>
+              <li><a href="#">ინდუქციური ღუმელი</a></li>
+              <li><a href="#">ღვინის გასახსნელი</a></li>
+              <li><a href="#">თერმოსები</a></li>
+              <li><a href="#">ბლენდერი</a></li>
+              <li><a href="#">სამზარეულოს სასწორი</a></li>
+              <li><a href="#">ჭკვიანი ონკანები</a></li>
+              <li><a href="#">აეროგრილი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ფოტო და ვიდეო კამერები</h3>
+            <ul>
+              <li><a href="#">360° კამერები</a></li>
+              <li><a href="#">Fujifilm</a></li>
+              <li><a href="#">Sony</a></li>
+              <li><a href="#">Nikon</a></li>
+              <li><a href="#">Canon</a></li>
+              <li><a href="#">ვიდეო კამერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>აკუსტიკური სისტემები</h3>
+            <ul>
+              <li><a href="#">სტუდიური დინამიკები</a></li>
+              <li><a href="#">დინამიკები</a></li>
+              <li><a href="#">დინამიკის აქსესუარები</a></li>
+              <li><a href="#">ხმის ბარები</a></li>
+              <li><a href="#">ფირსაკრავის აქსესუარები</a></li>
+              <li><a href="#">PC დინამიკები</a></li>
+              <li><a href="#">სახლის კინოთეატრები</a></li>
+              <li><a href="#">ფირსაკრავის</a></li>
+              <li><a href="#">სმარტ ასისტენტი</a></li>
+              <li><a href="#">პორტატული დინამიკები</a></li>
+              <li><a href="#">დიქტოფონები</a></li>
+              <li><a href="#">სპორტული ბლუთუზ დინამიკები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ყურსასმენები - Buds</h3>
+            <ul>
+              <li><a href="#">Sony Buds</a></li>
+              <li><a href="#">Airpods-ის ქეისები</a></li>
+              <li><a href="#">Apple Airpods</a></li>
+              <li><a href="#">OnePlus Buds</a></li>
+              <li><a href="#">Buds-ის აქსესუარები</a></li>
+              <li><a href="#">Realme Buds</a></li>
+              <li><a href="#">Xiaomi Buds</a></li>
+              <li><a href="#">Galaxy Buds</a></li>
+              <li><a href="#">Google Buds</a></li>
+              <li><a href="#">Nothing Buds</a></li>
+              <li><a href="#">JBL Buds</a></li>
+              <li><a href="#">Marshall Buds</a></li>
+              <li><a href="#">Blackshark Buds</a></li>
+              <li><a href="#">Honor Buds</a></li>
+              <li><a href="#">ყურსასმენები - Buds</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სამგზავრო ჩანთები</h3>
+            <ul>
+              <li><a href="#">სამგზავრო ჩემოდანი </a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>პროექტორები</h3>
+            <ul>
+              <li><a href="#">ლაზერული პროექტორები</a></li>
+              <li><a href="#">პროექტორის ჩანთები</a></li>
+              <li><a href="#">პრეზენტერები</a></li>
+              <li><a href="#">პროექტორის დაფები</a></li>
+              <li><a href="#">მულტიმედია პროექტორები</a></li>
+              <li><a href="#">პროექტორის შტატივები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მიკროფონი</h3>
+            <ul>
+              <li><a href="#">Streaming მიკროფონის სამაგრი</a></li>
+              <li><a href="#">ფოტოაპარატის მიკროფონები</a></li>
+              <li><a href="#">ლაპელური მიკროფონები</a></li>
+              <li><a href="#">მიკროფონის აქსესუარები</a></li>
+              <li><a href="#">უსადენო მიკროფონები</a></li>
+              <li><a href="#">საკონფერენციო მიკროფონები</a></li>
+              <li><a href="#">სტრიმინგ მიკროფონები</a></li>
+              <li><a href="#">Gaming მიკროფონები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Gaming მოწყობილობები</h3>
+            <ul>
+              <li><a href="#">HP Pabilion | Victus | OMEN</a></li>
+              <li><a href="#">MSI</a></li>
+              <li><a href="#">ASUS ROG | TUF</a></li>
+              <li><a href="#">Lenovo LEGION | Gaming 3</a></li>
+              <li><a href="#">Dell Inspiron | Alienware</a></li>
+              <li><a href="#">Acer Nitro | Predator</a></li>
+              <li><a href="#">MSI G Series | Leopard</a></li>
+              <li><a href="#">Gaming მონიტორები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Gaming</h3>
+            <ul>
+              <li><a href="#">VR სათვალეები</a></li>
+              <li><a href="#">სტრიმინგ მიკროფონები</a></li>
+              <li><a href="#">კონსოლები</a></li>
+              <li><a href="#">Gaming ყურსასმენები</a></li>
+              <li><a href="#">PC</a></li>
+              <li><a href="#">VR სიმულატორები</a></li>
+              <li><a href="#">Oculus</a></li>
+              <li><a href="#">კონტროლერები</a></li>
+              <li><a href="#">თამაშები</a></li>
+              <li><a href="#">Gaming მონიტორები</a></li>
+              <li><a href="#">Gaming სმარტფონები</a></li>
+              <li><a href="#">Gaming ლეპტოპები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Gaming აქსესუარები</h3>
+            <ul>
+              <li><a href="#">Gaming კლავიატურები</a></li>
+              <li><a href="#">Gaming ყურსასმენები</a></li>
+              <li><a href="#">ვიდეო ბარათები</a></li>
+              <li><a href="#">მაგიდები</a></li>
+              <li><a href="#">სავარძლები</a></li>
+              <li><a href="#">სათამაშო საჭეები</a></li>
+              <li><a href="#">გამაგრილებელი პედები</a></li>
+              <li><a href="#">Gaming დინამიკები</a></li>
+              <li><a href="#">SSD მყარი დისკები</a></li>
+              <li><a href="#">Web კამერები</a></li>
+              <li><a href="#">მაუს პედები</a></li>
+              <li><a href="#">Gaming აქსესუარები</a></li>
+              <li><a href="#">Gaming მაუსები</a></li>
+              <li><a href="#">Gaming მიკროფონები</a></li>
+              <li><a href="#">HDMI & LAN კაბელები</a></li>
+              <li><a href="#">Wi-Fi როუტერები</a></li>
+              <li><a href="#">LTE როუტერები</a></li>
+              <li><a href="#">სათამაშო ტრიგერებბი</a></li>
+              <li><a href="#">RGB განათება</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მედია პლეერები</h3>
+            <ul>
+              <li><a href="#">Amazon Fire TV Stick</a></li>
+              <li><a href="#">Apple TV Box</a></li>
+              <li><a href="#">Xiaomi Mi TV Box</a></li>
+              <li><a href="#">Xiaomi Mi TV Stick</a></li>
+              <li><a href="#">TapCast</a></li>
+              <li><a href="#">Google Chromecast</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ფიტნეს ტრეკერები და აქსესუარები</h3>
+            <ul>
+              <li><a href="#">ფიტნეს ტრეკერების აქსესუარები</a></li>
+              <li><a href="#">ფიტნეს ტრეკერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ლეპტოპის ბრენდები</h3>
+            <ul>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Honor</a></li>
+              <li><a href="#">HP</a></li>
+              <li><a href="#">MSI</a></li>
+              <li><a href="#">Dell</a></li>
+              <li><a href="#">Lenovo</a></li>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">Acer</a></li>
+              <li><a href="#">Apple</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სკუტერები</h3>
+            <ul>
+              <li><a href="#">სკუტერის აქსესუარები</a></li>
+              <li><a href="#">ჩაფხუტები</a></li>
+              <li><a href="#">Segway</a></li>
+              <li><a href="#">Xiaomi</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ტელევიზორის და მონიტორის აქსესუარები</h3>
+            <ul>
+              <li><a href="#">დენის დამაგრძელებლები</a></li>
+              <li><a href="#">HDMI კაბელები</a></li>
+              <li><a href="#">ტელევიზორის საკიდები </a></li>
+              <li><a href="#">ელექტროსადგურები</a></li>
+              <li><a href="#">ელემენტები</a></li>
+              <li><a href="#">მონიტორის განათება</a></li>
+              <li><a href="#">მონიტორის საწმენდები</a></li>
+              <li><a href="#">RGB განათება</a></li>
+              <li><a href="#">TV კლავიატურა</a></li>
+              <li><a href="#">UPS კვების წყარო</a></li>
+              <li><a href="#">LAN კაბელები</a></li>
+              <li><a href="#">Web კამერები</a></li>
+              <li><a href="#">Wi-Fi როუტერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სასაჩუქრე ბარათები</h3>
+            <ul>
+              <li><a href="#">სასაჩუქრე ბარათები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>PlayStation</h3>
+            <ul>
+              <li><a href="#">PlayStation-ის თამაშები</a></li>
+              <li><a href="#">PlayStation-ის აქსესუარები</a></li>
+              <li><a href="#">კონტროლერის აქსესუარები</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">PS$ აქსესუარები</a></li>
+              <li><a href="#">PlayStation VR</a></li>
+              <li><a href="#">PlayStation-ის კონტროლერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მტვერსასრუტები</h3>
+            <ul>
+              <li><a href="#">პორტატული მტვერსასრუტები</a></li>
+              <li><a href="#">ხელის მტვერსასრუტები</a></li>
+              <li><a href="#">მტვერსასრუტის აქსესუარები</a></li>
+              <li><a href="#">რობოტი მტვერსასრუტები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ექშენ კამერები</h3>
+            <ul>
+              <li><a href="#">Insta360</a></li>
+              <li><a href="#">ექშენ კამერის აქსესუარები</a></li>
+              <li><a href="#">DJI Osmo</a></li>
+              <li><a href="#">GoPro</a></li>
+              <li><a href="#">ექშენ კამერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ხელსაწყოები</h3>
+            <ul>
+              <li><a href="#">სმარტ საზომები</a></li>
+              <li><a href="#">ელექტრო სახრახნისი და ბურღი</a></li>
+              <li><a href="#">კომპრესორები და მუხტის მიმცემი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ლეპტოპის მახასიათებლები</h3>
+            <ul>
+              <li><a href="#">Chromebook</a></li>
+              <li><a href="#">Windows 11-ით</a></li>
+              <li><a href="#">Windows 10-ით</a></li>
+              <li><a href="#">FHD რეზოლუციით</a></li>
+              <li><a href="#">SSD მეხსიერებით</a></li>
+              <li><a href="#">ვიდეო ბარათით</a></li>
+              <li><a href="#">სენსორული ეკრანით</a></li>
+              <li><a href="#">Windows-ით</a></li>
+              <li><a href="#">ულტრა თხელი</a></li>
+              <li><a href="#">360° მოძრავი ეკრანი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>HDMI & LAN კაბელები</h3>
+            <ul>
+              <li><a href="#">HDMI კაბელები</a></li>
+              <li><a href="#">LAN კაბელები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ სათვალეები</h3>
+            <ul>
+              <li><a href="#">Ray-Ban Meta</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Top Audio</h3>
+            <ul>
+              <li><a href="#">Top Audio</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ფოტო პრინტერები</h3>
+            <ul>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Polaroid</a></li>
+              <li><a href="#">Canon</a></li>
+              <li><a href="#">Polaroid-ის აქსესუარები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>IT</h3>
+            <ul>
+              <li><a href="#">Wi-Fi & Bluetooth ადაპტერები</a></li>
+              <li><a href="#">HUB გადამყვანები</a></li>
+              <li><a href="#">UPS კვების წყარო</a></li>
+              <li><a href="#">პრინტერის აქსესუარები</a></li>
+              <li><a href="#">პრინტერები</a></li>
+              <li><a href="#">WiFi Range Extender</a></li>
+              <li><a href="#">Wi-Fi როუტერები</a></li>
+              <li><a href="#">LTE როუტერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ლეპტოპები</h3>
+            <ul>
+              <li><a href="#">Business ლეპტოპი</a></li>
+              <li><a href="#">Gaming ლეპტოპი</a></li>
+              <li><a href="#">Classic ლეპტოპი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ტელევიზორები</h3>
+            <ul>
+              <li><a href="#">LG</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Samsung</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Smartphone ფოტოგრაფია</h3>
+            <ul>
+              <li><a href="#">Osmo Mobile</a></li>
+              <li><a href="#">ლაპელური მიკროფონები</a></li>
+              <li><a href="#">Tripod</a></li>
+              <li><a href="#">ვლოგის ნაკრები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Outdoor</h3>
+            <ul>
+              <li><a href="#">თერმოსები</a></li>
+              <li><a href="#">ელექტროსადგურები</a></li>
+              <li><a href="#">მანძილმზომი</a></li>
+              <li><a href="#">ექშენ კამერები</a></li>
+              <li><a href="#">გარე დამტენები</a></li>
+              <li><a href="#">დანარი</a></li>
+              <li><a href="#">წყლის ტუმბო</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Nintendo</h3>
+            <ul>
+              <li><a href="#">Nintendo</a></li>
+              <li><a href="#">Nintendo-ს კონტროლერები</a></li>
+              <li><a href="#">Nintendo-ს აქსესუარები</a></li>
+              <li><a href="#">Nintendo-ს თამაშები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>პროცესორები</h3>
+            <ul>
+              <li><a href="#">Apple chip</a></li>
+              <li><a href="#">Intel Core</a></li>
+              <li><a href="#">AMD Ryzen</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ გადაადგილება</h3>
+            <ul>
+              <li><a href="#">სკუტერის აქსესუარები</a></li>
+              <li><a href="#">სკუტერები</a></li>
+              <li><a href="#">ელექტრო ველოსიპედები</a></li>
+              <li><a href="#">ჩაფხუტები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ტელესკოპი და ოპტიკა</h3>
+            <ul>
+              <li><a href="#">ენდოსკოპი</a></li>
+              <li><a href="#">მონოკლი</a></li>
+              <li><a href="#">მიკროსკოპი</a></li>
+              <li><a href="#">ბინოკლი</a></li>
+              <li><a href="#">აქსესუარები ოპტიკისთვის</a></li>
+              <li><a href="#">ტელესკოპი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სათვალე და აქსესუარები</h3>
+            <ul>
+              <li><a href="#">სათვალე და აქსესუარები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მზის პანელები</h3>
+            <ul>
+              <li><a href="#">მზის პანელები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ჭკვიანი სახლი</h3>
+            <ul>
+              <li><a href="#">ჭკვიანი სახლი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>აკვარიუმები</h3>
+            <ul>
+              <li><a href="#">აკვარიუმები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ელექტრო გასაღებები</h3>
+            <ul>
+              <li><a href="#">ელექტრო გასაღებები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ჭკვიანი სენსორები</h3>
+            <ul>
+              <li><a href="#">ჭკვიანი სენსორები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ჭკვიანი ქოლგა</h3>
+            <ul>
+              <li><a href="#">ჭკვიანი ქოლგა</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მეტალოდეტექტორი</h3>
+            <ul>
+              <li><a href="#">მეტალოდეტექტორი</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სპორტი</h3>
+            <ul>
+              <li><a href="#">სარბენი ბილიკები</a></li>
+              <li><a href="#">სმარტ საათები</a></li>
+              <li><a href="#">მასაჟორები</a></li>
+              <li><a href="#">სპორტული ყურსასმენები</a></li>
+              <li><a href="#">სასწორი</a></li>
+              <li><a href="#">ფიტნეს ტრეკერები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>სმარტ განათება</h3>
+            <ul>
+              <li><a href="#">განათების სენსორები</a></li>
+              <li><a href="#">RGB განათება</a></li>
+              <li><a href="#">მაგიდის სანათი</a></li>
+              <li><a href="#">სმარტ ნათურები</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>Skin-X</h3>
+            <ul>
+              <li><a href="#">Skin-X-Leather</a></li>
+              <li><a href="#">Skin-X-Satin</a></li>
+              <li><a href="#">Skin-X-Brushed</a></li>
+              <li><a href="#">Skin-X-Gloss</a></li>
+              <li><a href="#">Skin-X-Matte</a></li>
+              <li><a href="#">Skin-X-Textures</a></li>
+              <li><a href="#">Skin-X-360°</a></li>
+              <li><a href="#">Skin-X-Back Cover</a></li>
+              <li><a href="#">Skin-X-Other Devices</a></li>
+              <li><a href="#">Skin-X-Film</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>ფლეშ მეხსიერებები</h3>
+            <ul>
+              <li><a href="#">USB ფლეშ მეხსიერებები</a></li>
+              <li><a href="#">OTG ფლეშ მეხსიერება</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h3>მეხსიერების ბარათები</h3>
+            <ul>
+              <li><a href="#">Micro Sd მეხსიერების ბარათები</a></li>
+              <li><a href="#">SD მეხსიერების ბარათები</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div class="modal-container">
+      <div class="modal" id="loginModal">
+        <div class="modal-content">
+          <div class="modal-box">
+            <div class="modal-header">
+              <div class="auth-header active" id="authTab">
+                <h4>ავტორიზაცია</h4>
+              </div>
+              <div class="reg-header" id="regTab">
+                <h4>რეგისტრაცია</h4>
+              </div>
+            </div>
+
+            <div class="line-wrapper">
+              <div class="line-half" id="leftLine"></div>
+              <div class="line-half" id="rightLine"></div>
+            </div>
+            <span class="close-btn" id="closeModal">
+              <img
+                src="./assets/photo/mobile-modal-close.svg"
+                alt="Close Icon"
+              />
+            </span>
+            <div class="modal-body">
+              <div class="auth-methods">
+                <div class="auth-box" id="phoneAuth">
+                  <h4>ნომრით ავტორიზაცია</h4>
+                </div>
+                <div class="auth-box" id="emailAuth">
+                  <h4>მეილით ავტორიზაცია</h4>
+                </div>
+              </div>
+
+              <div class="email-box" style="display: none">
+                <div class="email-input">
+                  <input type="email" placeholder="ელფოსტა" />
+                </div>
+                <div class="password-input">
+                  <input
+                    type="password"
+                    placeholder="პაროლი"
+                    id="passwordInput"
+                  />
+                  <img
+                    class="password-hide-show password-hidden"
+                    src="./assets/photo/hiddenPassword.svg"
+                    alt="Hide Password Icon"
+                  />
+                  <img
+                    class="password-hide-show password-shown"
+                    src="./assets/photo/showPassword.svg"
+                    alt="Show Password Icon"
+                    style="display: none"
+                  />
+                  <a href="#" class="forgot-password">დაგავიწყდა პაროლი?</a>
+                </div>
+              </div>
+              <div class="phone-box">
+                <div class="flag-phone">
+                  <img
+                    src="./assets/photo/flag-geo.png"
+                    alt="Georgian Flag"
+                    class="flag"
+                  />
+                  <p>+995</p>
+                </div>
+                <div class="phone-input">
+                  <input type="text" placeholder="ტელეფონის ნომერი" />
+                </div>
+              </div>
+
+              <div class="agreement-section" style="display: none">
+                <div class="checkbox-container" id="agreementCheckbox">
+                  <img
+                    class="checkbox"
+                    src="./assets/photo/ellipse-outline.svg"
+                    alt="Ellipse icon"
+                  />
+                  <img
+                    src="./assets/photo/checked-rules.svg"
+                    alt="Checked"
+                    class="checkmark"
+                    style="display: none"
+                  />
+                </div>
+                <div class="agreement-text">
+                  წავიკითხე და ვეთანხმები
+                  <a
+                    href="/info/terms-and-conditions"
+                    target="_blank"
+                    class="agreement-link"
+                    >წესებს, პირობებს და პერსონალურ მონაცემთა დაცვის
+                    პოლიტიკას</a
+                  >
+                </div>
+              </div>
+
+              <button class="modal-btn">
+                <span>კოდის გამოგზავნა</span>
+              </button>
+              <div style="border: 1px solid #f2f2f2"></div>
+              <div class="auth-method__other">
+                <h4>ან გაიარე ავტორიზაცია სხვა მეთოდით</h4>
+              </div>
+              <div class="google-signin">
+                <div class="google-icon-box">
+                  <img
+                    class="google-icon"
+                    src="./assets/photo/google-icon.svg"
+                    alt="Google Sign-in"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
     <section class="main-sec">
@@ -3868,27 +5127,14 @@
             </div>
           </div>
 
-       
-         
-
-
-    
- 
-   <div class="main-div">
-    <div class="slider-div">
-      <div class="aside-div">Aside Content
+       </div>
+     </div> 
       
-      </div>
       <div class="carousel-container">
-        <div class="carousel-slide">
-        
-        </div>
-        <button class="prev-btn"></button>
-        <button class="next-btn"></button>
-      </div>
-    </div>
-  </div>
-        <img src="./photo/main-logo.svg" alt="logo" />
+      <div class="carousel-slide">
+    </div>     
+</section>
+    
     <div class="chat-button">
       <svg
         class="chat-button"
@@ -4026,11 +5272,12 @@
       </div>
     </footer>
 
-
+ <script type="module" src="./headerScripts/header.js"></script>
   <script src="./js/script.js"> </script>  
   <script src="./js/slider.js"> </script> 
     <script src="./js/scrolling.js"></script>
 </body>
 </html>
+
 
 
