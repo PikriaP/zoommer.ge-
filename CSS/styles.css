@@ -49,100 +49,244 @@
   --product-action-white-mobile: #fff;
   --product-branch-white-400: #f2f2f2;
   --product-floatBar-oldPrice-black: #fff;
+
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-07);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-05);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+}
+
+
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
+body, html {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Main Sections */
 .main-sec {
   flex-grow: 1;
-  margin: 30px 0 60px;
+  margin: 30px 0px 60px;
 }
 
 .main-div {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 130px;
   padding: 115px 15px;
 }
 
+/* Slider and Layout */
 .slider-div {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 246px calc(100% - 276px);
+  column-gap: 30px;
+}
+
+/* Aside Section */
+.aside-menu {
+  width: 246px;
+  min-height: 342px;
+  background: var(--white-main);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+  border-radius: 12px;
+}
+
+/* Aside Menu Container */
+.aside-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  cursor: pointer;
+  padding: 11.5px 10px 11.5px 15px;
+}
+
+.aside-menu-container:hover {
+  background-color: var(--white-400);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  padding: 0px;
+  box-shadow: rgba(0, 0, 0, 0.08) 4px 0px 8px 1px;
+  position: absolute;
+  left: 246px;
+  min-height: 342px;
+  z-index: 9;
+  background: white;
+}
+
+/* Dropdown Columns */
+.dropdown-column h5 {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black-main);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-column ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--black-08);
+  opacity: 0.8;
+}
+
+/* Responsive Dropdowns */
+.dropdown--responsive {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .aside-menu, .dropdown-content {
+    display: none;
+  }
+  .dropdown--responsive {
+    display: block;
+  }
+  .dropdown--left {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    max-width: 80px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .dropdown--right {
+    position: fixed;
+    top: 64px;
+    left: 80px;
+    height: calc(100% - 64px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Carousel */
+.carousel-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 895px;
+  height: 340px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Footer */
+.footer-wrapper {
+  background-color: rgba(248, 244, 244, 0.829);
+}
+
+.footer__content {
   display: flex;
   justify-content: space-between;
-
-  width: 100%;
-  position: relative;
+  gap: 50px;
 }
 
-/* Aside section (left side) */
-.aside-div {
-  width: 246px;
-  height: 342px;
-  background-color: #f0f0f0;
+.footer__list li a {
+  list-style: none;
+  color: var(--black-08);
+  font-size: 13px;
+  line-height: 35px;
 }
 
-.carousel-container {
-  position: relative;
-  border-radius: 15px;
-  width: 894px;
-  height: 342px;
-  overflow: hidden;
-  /* margin-right: 30px; */
+.footer__title {
+  color: var(--black-08);
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
-.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
+footer img {
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
-.carousel-img {
-  max-width: 100%;
-  height: 342px;
-  object-fit: cover;
-}
-
-/* Navigation buttons */
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 10px;
+/* Scroll and Chat Buttons */
+.scroll {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: var(--gray-secondary);
   cursor: pointer;
-  z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.prev-btn {
-  background-image: url(https://zoommer.ge/icons/slider-left-btn.svg);
-  width: 50px;
+.chat-button {
   height: 50px;
-  top: 50%;
-  left: 10px;
-}
-
-.next-btn {
-  background-image: url(https://zoommer.ge/icons/slider-right-btn.svg);
   width: 50px;
-  height: 50px;
-  top: 50%;
-  right: 10px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: var(--orange-primary);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.prev-btn:hover,
-.next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.chat-button:hover {
+  width: 60px;
+  height: 60px;
 }
+
+/* .carousel-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: fit-content;
+  height: 340px;
+  width: 895px;
+  background-position: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1
+} */
