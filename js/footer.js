@@ -5,7 +5,12 @@ const chatWindow = document.querySelector(".chat-window");
 const chatButton = document.querySelector(".chat-button");
 const chatClose = document.querySelector(".chat__header--close");
 const startChatBtn = document.querySelector(".start-chat");
-const chatForm=document.querySelector('.chat-form')
+const chatForm = document.querySelector(".chat-form");
+const chatinputs = document.querySelectorAll(".form__inputs");
+const nameInput = document.getElementById("name"); // სახელი
+const telInput = document.getElementById("tel"); // ტელეფონის ნომერი
+const startChatButton = document.getElementById("start-chat"); // დაწყების ღილაკი
+const inputLable = document.querySelectorAll(".input--label");
 
 // Initially hide the button
 scrollbtn.style.display = "none";
@@ -26,35 +31,13 @@ scrollbtn.addEventListener("click", function () {
   console.log(scrollbtn);
 });
 
-// // const chatWindow = document.querySelector(".chat-window");
-// const secondChat = document.querySelector(".second-chat--window");
-// const registrationBtn = document.querySelector(".registration-btn");
-// const startChat = document.querySelector(".start-chat");
-// const registrationItems = document.querySelector(".registration-btn--item");
-
-// // Close the chat window when clicking the chat button
-
-// chatButton.addEventListener("click", () => {
-//   chatWindow.style.display = "none";
-//   secondChat.style.display = "block";
-// });
-
-// startChat.addEventListener("click", function () {
-//   secondChat.style.display = "none";
-//   startChat.style.display = "none";
-//   registrationBtn.style.display = "flex";
-//   console.log(inputName.value);
-//   document.querySelector(".registration-btn--item").textContent =
-//     inputName.value;
-// });
-
 // set time zone
 
 const timeNow = new Date();
 let currentHours = timeNow.getHours();
 let currentMinutes = timeNow.getMinutes();
 console.log(timeNow);
-currentHours = 10;
+
 
 console.log(currentHours + ", " + currentMinutes);
 
@@ -102,9 +85,6 @@ chatButton.addEventListener("click", function () {
 function closeWindow() {
   chatWindow.classList.remove("show");
   workingMessage.style.display = "none";
-  
-
-
 }
 
 function startConversation() {
@@ -114,7 +94,30 @@ function startConversation() {
 
 startChatBtn.addEventListener("click", function () {
   startChatBtn.style.display = "none";
-  chatForm.style.display='block';
+  chatForm.style.display = "block";
 });
 
+// function formvalidation
 
+function toggleSubmitButton() {
+  inputLable.forEach((lable) => {
+    lable.classList.add("clicked");
+  });
+
+  if (nameInput.checkValidity() && telInput.checkValidity()) {
+    startChatButton.classList.add("ready");
+    startChatButton.addEventListener("click", function () {
+      alert("hello");
+    });
+  } else {
+    startChatButton.classList.remove("ready");
+  }
+}
+
+// Listen for input events on both fields to recheck validity
+nameInput.addEventListener("input", toggleSubmitButton);
+telInput.addEventListener("input", toggleSubmitButton);
+
+// function moveLable() {
+//   inputLable.classList.add("clicked");
+// }
