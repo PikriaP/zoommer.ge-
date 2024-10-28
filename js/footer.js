@@ -11,6 +11,7 @@ const nameInput = document.getElementById("name"); // სახელი
 const telInput = document.getElementById("tel"); // ტელეფონის ნომერი
 const startChatButton = document.getElementById("start-chat"); // დაწყების ღილაკი
 const inputLable = document.querySelectorAll(".input--label");
+const backToBtn = document.querySelector(".chat__header--backTo");
 
 // Initially hide the button
 scrollbtn.style.display = "none";
@@ -38,6 +39,8 @@ let currentHours = timeNow.getHours();
 let currentMinutes = timeNow.getMinutes();
 console.log(timeNow);
 
+// for test
+currentHours=10;
 
 console.log(currentHours + ", " + currentMinutes);
 
@@ -85,6 +88,7 @@ chatButton.addEventListener("click", function () {
 function closeWindow() {
   chatWindow.classList.remove("show");
   workingMessage.style.display = "none";
+  backToBtn.style.display='none';
 }
 
 function startConversation() {
@@ -94,6 +98,7 @@ function startConversation() {
 
 startChatBtn.addEventListener("click", function () {
   startChatBtn.style.display = "none";
+  backToBtn.style.display='block';
   chatForm.style.display = "block";
 });
 

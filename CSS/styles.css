@@ -274,12 +274,10 @@ footer img {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  
 }
-.chat-form{
+.chat-form {
   display: none;
 }
-
 
 .start-chat {
   width: 245px;
@@ -291,7 +289,10 @@ footer img {
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
+}
 
+.chat__header--backTo {
+  display: none;
 }
 
 .chat-form__wrapper {
@@ -317,7 +318,6 @@ footer img {
   pointer-events: none;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
-
 }
 
 .chat_input label.clicked {
@@ -325,8 +325,6 @@ footer img {
   top: 5%;
   font-size: 10px;
 }
-
-
 
 .chat_input input {
   width: 276px;
@@ -345,10 +343,7 @@ footer img {
   border-color: rgb(240, 121, 8);
   outline: 0px;
   box-shadow: none;
-
-
 }
-
 
 .chat__submint--btn {
   width: 256px;
@@ -373,7 +368,6 @@ footer img {
   cursor: pointer;
   background-color: rgba(240, 121, 8, 0.2);
   color: rgb(240, 121, 8);
-
 }
 
 .chat__submint--btn:hover {
@@ -385,47 +379,6 @@ footer img {
 .form__inputs:required:focus:invalid {
   background-color: rgba(255, 0, 0, 0.2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* chat window end */
 
