@@ -1,4 +1,11 @@
 const scrollbtn = document.querySelector(".scroll");
+const workingMessage = document.querySelector(".chat-conversation");
+const notWorkingMessage = document.querySelector(".not-working--message");
+const chatWindow = document.querySelector(".chat-window");
+const chatButton = document.querySelector(".chat-button");
+const chatClose = document.querySelector(".chat__header--close");
+const startChatBtn = document.querySelector(".start-chat");
+const chatForm=document.querySelector('.chat-form')
 
 // Initially hide the button
 scrollbtn.style.display = "none";
@@ -19,32 +26,95 @@ scrollbtn.addEventListener("click", function () {
   console.log(scrollbtn);
 });
 
-const chatButton = document.querySelector(".chat-button");
-const chatWindow = document.querySelector(".chat-window");
-const secondChat = document.querySelector(".second-chat--window");
-const registrationBtn = document.querySelector(".registration-btn");
-const startChat = document.querySelector(".start-chat");
-const registrationItems = document.querySelector(".registration-btn--item");
+// // const chatWindow = document.querySelector(".chat-window");
+// const secondChat = document.querySelector(".second-chat--window");
+// const registrationBtn = document.querySelector(".registration-btn");
+// const startChat = document.querySelector(".start-chat");
+// const registrationItems = document.querySelector(".registration-btn--item");
 
-// Show the chat window when clicking the chat button
-chatButton.addEventListener("click", () => {
-  chatWindow.style.display = "block";
+// // Close the chat window when clicking the chat button
+
+// chatButton.addEventListener("click", () => {
+//   chatWindow.style.display = "none";
+//   secondChat.style.display = "block";
+// });
+
+// startChat.addEventListener("click", function () {
+//   secondChat.style.display = "none";
+//   startChat.style.display = "none";
+//   registrationBtn.style.display = "flex";
+//   console.log(inputName.value);
+//   document.querySelector(".registration-btn--item").textContent =
+//     inputName.value;
+// });
+
+// set time zone
+
+const timeNow = new Date();
+let currentHours = timeNow.getHours();
+let currentMinutes = timeNow.getMinutes();
+console.log(timeNow);
+currentHours = 10;
+
+console.log(currentHours + ", " + currentMinutes);
+
+// working hourse = 09:30-19:30
+
+// if (
+//   currentHours > 19 ||
+//   (currentHours === 19 && currentMinutes > 30) ||
+//   currentHours < 9 ||
+//   (currentHours === 9 && currentMinutes <= 30)
+// ) {
+//   console.log("not working hours");
+//   workingMessage.style.display = "none";
+//   notWorkingMessage.style.display = "flex";
+// } else {
+//   console.log("working hours");
+//   startConversation();
+// }
+
+// open chat window
+chatButton.addEventListener("click", function () {
+  chatWindow.classList.add("show");
+
+  if (
+    currentHours > 19 ||
+    (currentHours === 19 && currentMinutes > 30) ||
+    currentHours < 9 ||
+    (currentHours === 9 && currentMinutes <= 30)
+  ) {
+    console.log("not working hours");
+    workingMessage.style.display = "none";
+    notWorkingMessage.style.display = "flex";
+  } else {
+    console.log("working hours");
+    startConversation();
+  }
 });
 
-// Close the chat window when clicking the chat button
+//close chat
+// chatClose.addEventListener("click", function () {
+//   chatWindow.classList.remove("show");
 
-//second chat
+// });
 
-chatButton.addEventListener("click", () => {
-  chatWindow.style.display = "none";
-  secondChat.style.display = "block";
+function closeWindow() {
+  chatWindow.classList.remove("show");
+  workingMessage.style.display = "none";
+  
+
+
+}
+
+function startConversation() {
+  workingMessage.style.display = "flex";
+  notWorkingMessage.style.display = "none";
+}
+
+startChatBtn.addEventListener("click", function () {
+  startChatBtn.style.display = "none";
+  chatForm.style.display='block';
 });
 
-startChat.addEventListener("click", function () {
-  secondChat.style.display = "none";
-  startChat.style.display = "none";
-  registrationBtn.style.display = "flex";
-  console.log(inputName.value);
-  document.querySelector(".registration-btn--item").textContent =
-    inputName.value;
-});
+
