@@ -294,18 +294,41 @@ footer img {
 
 }
 
+.chat-form__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 14px;
+}
+
+.chat_input {
+  position: relative;
+}
+
+.chat_input label {
+  position: absolute;
+  left: 16px;
+  z-index: 1;
+  transition: 0.2s;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+
+}
+
+.chat_input label.clicked {
+  transform: translateY(0%);
+  top: 5%;
+  font-size: 10px;
+}
 
 
 
-
-
-
-
-
-
-
-
-.registration-btn--item {
+.chat_input input {
   width: 276px;
   height: 48px;
   border-radius: 8px;
@@ -316,28 +339,93 @@ footer img {
   padding-right: 12px;
   padding-bottom: 8px;
 }
-.registration-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 320px;
-  height: 512px;
-  background-color: #fff;
-  border: 1px solid rgb(194, 188, 188);
-  border-radius: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  gap: 32px;
-  display: none;
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  z-index: 100;
+
+.chat_input input:hover,
+.chat_input input:focus {
+  border-color: rgb(240, 121, 8);
+  outline: 0px;
+  box-shadow: none;
+
+
 }
-/* #finish-registration :hover {
+
+
+.chat__submint--btn {
+  width: 256px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  font-family: FiraGO-Medium;
+  font-size: 14px;
+  border: 0px;
+  gap: 5px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: not-allowed;
+}
+
+.chat__submint--btn.ready {
   cursor: pointer;
-  background-color: rgb(240, 121, 8);
-} */
+  background-color: rgba(240, 121, 8, 0.2);
+  color: rgb(240, 121, 8);
+
+}
+
+.chat__submint--btn:hover {
+  color: rgb(240, 121, 8) !important;
+  box-shadow: none !important;
+}
+
+/* .form__inputs:invalid, */
+.form__inputs:required:focus:invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* chat window end */
 

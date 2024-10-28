@@ -143,20 +143,28 @@
             ჩატის დაწყება
           </button>
           <form class="chat-form">
-            <div class="start-conversation">
-              <input
-                type="text"
-                placeholder="სახელი"
-                class="registration-btn--item"
-              />
-
-              <input
-                type="text"
-                placeholder="ტელეფონის ნომერი"
-                class="registration-btn--item"
-              />
-
-              <button class="registration-btn--item" id="finish-registration">
+            <div class="chat-form__wrapper">
+              <div class="input--name chat_input">
+                <label class="input--label" for="name">სახელი</label>
+                <input
+                  type="text"
+                  title="name"
+                  class="form__inputs"
+                  id="name"
+                  pattern="[a-zA-Zა-ჰ]+" required/>
+              </div>
+              <div class="input--name chat_input">
+                <label class="input--label " for="tel"
+                  >ტელეფონის ნომერი</label
+                >
+                <input
+                  type="text"
+                  title="tel"
+                  class="form__inputs"
+                  id="tel"
+                  pattern="^\+?\d{9,13}$" required/>
+              </div>
+              <button class="chat__submint--btn" id="start-chat" type="submit">
                 დაწყება
               </button>
             </div>
