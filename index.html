@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="stylesheet" href="./CSS/fonts.css" />
     <link rel="stylesheet" href="./CSS/responsiveslider.css" />
+    <link rel="stylesheet" href="./CSS/responsivefooter.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -16,64 +17,8 @@
     <title>zoommer.ge</title>
   </head>
   <body>
-    <!-- header -->
-
-    <!-- main section -->
-    <!-- main div -->
-
-    <!-- main slider div -->
-
-    <!-- <section class="main-sec">
-      <div class="main-div">
-        <div class="slider-div">
-          <div class="aside-menu"></div>
-          <div class="carousel-slide"></div>
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F28267f59-a845-4852-a0cc-05d184714fc7_Thumb.jpeg&w=1920&q=75"
-            alt="iphone 16pro"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F49d18bd0-0589-4947-a223-5df70b44e7a5_Thumb.jpeg&w=1920&q=75"
-            alt="iphone 16s"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F3ee0fed9-a1fc-4bf7-ab02-f24a27d4194d_Thumb.jpeg&w=3840&q=75"
-            alt="google pixel"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Ff8ab115e-4ec8-43c1-9856-1183d61ed9f0_Thumb.jpeg&w=3840&q=75"
-            alt="apple watch"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F6f9d6233-91ff-4ad1-b7ca-18f219572332_Thumb.jpeg&w=3840&q=75"
-            alt="airpods"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F345eddb5-786c-4cd7-8557-c9906bb34ab1_Thumb.jpeg&w=3840&q=75"
-            alt="airpodsmax"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F6b24321f-727c-4c4c-840e-161e610a7590_Thumb.jpeg&w=3840&q=75"
-            alt="mi"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F753ae0c2-913e-4258-8f32-cc3ffb3a5d85_Thumb.jpeg&w=3840&q=75"
-            alt="miairfryer"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2Fc635c17f-aa5c-4210-84f2-81ee1e17149d_Thumb.jpeg&w=3840&q=75"
-            alt="pixel phone"
-          />
-          <img
-            src="https://zoommer.ge/_next/image?url=https%3A%2F%2Fs3.zoommer.ge%2Fsite%2F98f8b232-57da-471c-995a-790a7082ab43_Thumb.jpeg&w=3840&q=75"
-            alt="anker"
-          />
-        </div>
-        <button><i class="bi bi-arrow-left-circle"></i></button>
-        <button><i class="bi bi-arrow-right-circle"></i></button>
-      </div>
-    </section> -->
-    <img src="./photo/main-logo.svg" alt="logo" />
+   
+    
     <div class="chat-button">
       <svg
         class="chat-button"
@@ -110,8 +55,33 @@
           https://www.facebook.com/zoommerge
         </p>
       </div>
+      <div class="bottom-text">
+        <p>Powered By <img src="./assets/photo/whizio.svg" alt="whizio" /></p>
+      </div>
     </div>
+
     <!-- <div class="close-window"></div> -->
+    <div class="second-chat--window">
+      <div class="second-chat--content">
+        <button class="start-chat">ჩატის დაწყება</button>
+      </div>
+      <div class="bottom-text">
+        <p>Powered By <img src="./assets/photo/whizio.svg" alt="whizio" /></p>
+      </div>
+    </div>
+    <div class="registration-btn">
+      <input type="text" placeholder="სახელი" class="registration-btn--item" />
+
+      <input
+        type="text"
+        placeholder="ტელეფონის ნომერი"
+        class="registration-btn--item"
+      />
+
+      <button class="registration-btn--item" id="finish-registration">
+        დაწყება
+      </button>
+    </div>
 
     <div class="scroll">
       <img src="assets/photo/arrow.svg" alt="arrow-icon" />
@@ -128,9 +98,7 @@
       </div>
     </div>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/scrolling.js"></script>
+   
 
     <footer class="footer">
       <div class="footer-wrapper">
@@ -236,5 +204,8 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/footer.js"></script>
   </body>
 </html>

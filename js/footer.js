@@ -21,13 +21,30 @@ scrollbtn.addEventListener("click", function () {
 
 const chatButton = document.querySelector(".chat-button");
 const chatWindow = document.querySelector(".chat-window");
+const secondChat = document.querySelector(".second-chat--window");
+const registrationBtn = document.querySelector(".registration-btn");
+const startChat = document.querySelector(".start-chat");
+const registrationItems = document.querySelector(".registration-btn--item");
 
 // Show the chat window when clicking the chat button
 chatButton.addEventListener("click", () => {
   chatWindow.style.display = "block";
 });
 
-// const closeWindow = document.querySelector(".close-window");
-// closeWindow.addEventListener("click", () => {
-//   chatWindow.style.display = "none";
-// });
+// Close the chat window when clicking the chat button
+
+//second chat
+
+chatButton.addEventListener("click", () => {
+  chatWindow.style.display = "none";
+  secondChat.style.display = "block";
+});
+
+startChat.addEventListener("click", function () {
+  secondChat.style.display = "none";
+  startChat.style.display = "none";
+  registrationBtn.style.display = "flex";
+  console.log(inputName.value);
+  document.querySelector(".registration-btn--item").textContent =
+    inputName.value;
+});
