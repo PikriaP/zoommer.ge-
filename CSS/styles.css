@@ -127,11 +127,13 @@ a {
   padding: 11.5px 10px 11.5px 15px;
   position: relative;
   width: 100%;
+ 
 }
 
 .aside-menu-container:hover {
   background-color: var(--white-400);
 }
+
 
 .aside-menu-photo {
   width: 23px;
