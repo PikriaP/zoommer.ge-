@@ -6,12 +6,26 @@ function fetchJSONData() {
       }
       return res.json();
     })
-    .then((data) => displayProducts(data))
-    .catch((error) => console.error("Unable to fetch data:", error));
+    .then((data) => {
+      // Log the data for inspection
+      console.log(data);
+
+      if (!Array.isArray(data)) {
+        throw new Error("Data is not an array");
+      }
+
+      displayProducts(data);
+    })
+    .catch((error) => {
+      console.error("Unable to fetch data:", error);
+      // Display a user-friendly error message or handle the error differently
+      const div = document.getElementById("div");
+      div.innerHTML = "An error occurred while fetching data. Please try again later.";
+    });
 }
 
-// Call the function to fetch data
 fetchJSONData();
+
 
 const displayProducts = (data) => {
   // Ensure 'div' is defined
