@@ -437,3 +437,81 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// fetch data
+async function generateNavigation() {
+  try {
+    const response = await fetch("./productList.json"); // Changed path and data file name
+    const categories = await response.json();
+
+    const navContainer = document.querySelector(".navigation"); // Changed element selector
+    let navContent = "";
+
+    categories.forEach((category) => {
+      let subNav = "";
+
+      if (category.subcategories && category.subcategories.length > 0) {
+        subNav = category.subcategories
+          .map((subCategory) => {
+            return `
+              <li class="sub-nav-item">
+                <h5 class="sub-nav-title">${subCategory.name}</h5>
+                <ul class="sub-nav-list">
+                  ${
+                    subCategory.items
+                      ? subCategory.items
+                          .map((item) => `<li><a href="${item.url}">${item.name}</a></li>`)
+                          .join("")
+                      : '<li><a href="#">No items available</a></li>'
+                  }
+                </ul>
+              </li>
+            `;
+          })
+          .join("");
+      }
+
+      navContent += `
+        <li class="nav-item">
+          <button class="nav-button">
+            <img class="nav-icon" src="${category.iconUrl}" alt="${category.name}" /> <span class="nav-title">${category.name}</span>
+          </button>
+          ${subNav}
+        </li>
+      `;
+    });
+
+    navContainer.innerHTML = navContent;
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+  }
+}
+
+export { generateNavigation };
+
+function fetchAndDisplayCategories() {
+  const categoryContainer = document.getElementById('categoryContainer');
+
+  fetch('./productList.json')
+    .then(response => response.json())
+    .then(categories => renderCategoryList(categories))
+    .catch(error => console.error('Error fetching categories:', error));
+}
+
+function renderCategoryList(categories) {
+  let categoryListHTML = '';
+  categories.forEach((category, index) => {
+    const isActive = index === 0 ? 'active-category' : '';
+    categoryListHTML += createCategoryItem(category, isActive);
+  });
+  categoryContainer.innerHTML = categoryListHTML;
+}
+
+function createCategoryItem(category, isActiveClass) {
+  const iconUrl = category.iconUrl || 'default-icon.png';
+  return `
+    <li class="category-item ${isActiveClass}">
+      <img class="category-icon" src="${iconUrl}" alt="${category.name}" />
+      <span class="category-title">${category.name}</span>
+    </li>
+  `;
+}
