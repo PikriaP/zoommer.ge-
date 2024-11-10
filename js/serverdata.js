@@ -7,46 +7,50 @@ function fetchJSONData() {
       return res.json();
     })
     .then((data) => {
-      // Log the data for inspection
-      console.log(data);
-
+      console.log(data); // Check if the data is fetched
       if (!Array.isArray(data)) {
         throw new Error("Data is not an array");
       }
-
       displayProducts(data);
     })
     .catch((error) => {
       console.error("Unable to fetch data:", error);
-      // Display a user-friendly error message or handle the error differently
-      const div = document.getElementById("div");
-      div.innerHTML = "An error occurred while fetching data. Please try again later.";
+      document.querySelector(".product-container").innerHTML =
+        "An error occurred while fetching data. Please try again later.";
     });
 }
 
-fetchJSONData();
+function displayProducts(data) {
+  const productContainer = document.querySelector(".product-container");
 
-
-const displayProducts = (data) => {
-  // Ensure 'div' is defined
-  const div = document.getElementById("div");
-
-  if (!div) {
-    console.error("Element with ID 'div' not found.");
+  if (!productContainer) {
+    console.error("Element with class 'product-container' not found.");
     return;
   }
 
-  // Clear previous content
-  div.innerHTML = "";
+  productContainer.innerHTML = "";
 
-  // Loop through data to display each product
-  data.forEach((product) => {
-    const container = document.createElement("div");
-    container.innerHTML = `
-      <img src="${product.imageUrl}" alt="${product.name}" />
-      <p>${product.name}</p>
-      <p>${product.price}</p>
+  // Limit to 14 products in total
+  const productsToShow = data.slice(0, 6);
+
+  productsToShow.forEach((product) => {
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
+
+    productCard.innerHTML = `
+      <img src="${product.imageUrl}" alt="${product.name}" class="product-thumb">
+      <div class="product-info">
+        <p class="product-name">${product.name}</p>
+        <div class="price-section">
+          <span class="product-price">${product.price}₾</span>
+          ${product.previousPrice ? `<span class="product-old-price">${product.previousPrice}₾</span>` : ""}
+        </div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
     `;
-    div.appendChild(container);
+
+    productContainer.appendChild(productCard);
   });
-};
+}
+
+fetchJSONData();
