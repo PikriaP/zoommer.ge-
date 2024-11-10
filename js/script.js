@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // fetch data
 async function generateNavigation() {
   try {
-    const response = await fetch("./productList.json"); // Changed path and data file name
+    const response = await fetch("productList.json"); // Changed path and data file name
     const categories = await response.json();
 
     const navContainer = document.querySelector(".navigation"); // Changed element selector
@@ -491,7 +491,7 @@ export { generateNavigation };
 function fetchAndDisplayCategories() {
   const categoryContainer = document.getElementById('categoryContainer');
 
-  fetch('./productList.json')
+  fetch('productList.json')
     .then(response => response.json())
     .then(categories => renderCategoryList(categories))
     .catch(error => console.error('Error fetching categories:', error));

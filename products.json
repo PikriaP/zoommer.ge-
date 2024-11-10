@@ -683,6 +683,1028 @@
       "routeIsNotValid": null,
       "subCategoryName": null
     },
+    {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+    },
+    {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      },
+      {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      }, {
+        "id": 42570,
+        "name": "Xiaomi Poco Pad 8GB RAM 256GB Wi-Fi Blue",
+        "barCode": "ZOOM-033638",
+        "price": 949,
+        "previousPrice": null,
+        "categoryName": "Xiaomi",
+        "imageUrl": "https://s3.zoommer.ge/site/de699d1e-48af-4d33-90e5-a2e095b0c11f_Thumb.jpeg",
+        "route": "planshetebi/xiaomi-poco-pad-8gb-ram-256gb-wi-fi-blue-p42570"
+      },
+      {
+        "id": 42571,
+        "name": "Samsung Galaxy Tab S7 FE 6GB RAM 128GB Wi-Fi Black",
+        "barCode": "ZOOM-033639",
+        "price": 1200,
+        "previousPrice": 1350,
+        "categoryName": "Samsung",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-samsung-tab.jpg",
+        "route": "planshetebi/samsung-galaxy-tab-s7-fe-p42571"
+      },
+      {
+        "id": 42572,
+        "name": "Apple iPad Pro 11-inch 128GB Wi-Fi Silver",
+        "barCode": "ZOOM-033640",
+        "price": 1500,
+        "previousPrice": 1700,
+        "categoryName": "Apple",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-ipad.jpg",
+        "route": "planshetebi/apple-ipad-pro-11-inch-p42572"
+      },
+      {
+        "id": 42573,
+        "name": "Lenovo Tab M10 HD 4GB RAM 64GB Wi-Fi Grey",
+        "barCode": "ZOOM-033641",
+        "price": 650,
+        "previousPrice": 700,
+        "categoryName": "Lenovo",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-lenovo-tab.jpg",
+        "route": "planshetebi/lenovo-tab-m10-hd-p42573"
+      },
+      {
+        "id": 42574,
+        "name": "Huawei MatePad 10.4-inch 6GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033642",
+        "price": 980,
+        "previousPrice": 1050,
+        "categoryName": "Huawei",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-huawei-matepad.jpg",
+        "route": "planshetebi/huawei-matepad-10-4-p42574"
+      },
+      {
+        "id": 42575,
+        "name": "Microsoft Surface Go 3 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033643",
+        "price": 1400,
+        "previousPrice": 1600,
+        "categoryName": "Microsoft",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-surface-go.jpg",
+        "route": "planshetebi/microsoft-surface-go-3-p42575"
+      },
+      {
+        "id": 42576,
+        "name": "Amazon Fire HD 10 3GB RAM 64GB Wi-Fi Black",
+        "barCode": "ZOOM-033644",
+        "price": 300,
+        "previousPrice": 350,
+        "categoryName": "Amazon",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-fire-hd.jpg",
+        "route": "planshetebi/amazon-fire-hd-10-p42576"
+      },
+      {
+        "id": 42577,
+        "name": "Asus ROG Flow Z13 16GB RAM 512GB SSD",
+        "barCode": "ZOOM-033645",
+        "price": 2500,
+        "previousPrice": 2800,
+        "categoryName": "Asus",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-asus-rog.jpg",
+        "route": "planshetebi/asus-rog-flow-z13-p42577"
+      },
+      {
+        "id": 42578,
+        "name": "Realme Pad X 4GB RAM 64GB Wi-Fi Green",
+        "barCode": "ZOOM-033646",
+        "price": 700,
+        "previousPrice": 750,
+        "categoryName": "Realme",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-realme-pad.jpg",
+        "route": "planshetebi/realme-pad-x-p42578"
+      },
+      {
+        "id": 42579,
+        "name": "Google Pixel Slate 8GB RAM 128GB Wi-Fi",
+        "barCode": "ZOOM-033647",
+        "price": 1600,
+        "previousPrice": 1800,
+        "categoryName": "Google",
+        "imageUrl": "https://s3.zoommer.ge/site/sample-image-pixel-slate.jpg",
+        "route": "planshetebi/google-pixel-slate-p42579"
+      },
+    
   
     {
       "categoryId": 877,
