@@ -170,10 +170,24 @@
 .second-slider {
   width: 100%;
   max-width: 1200px;
-  height: 303px;
-  position: relative;
   overflow: hidden;
   padding: 1.5rem;
   z-index: 1;
   margin: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
 }
