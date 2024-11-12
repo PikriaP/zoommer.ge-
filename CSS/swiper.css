@@ -207,7 +207,35 @@
     font-size: 16px;
   }
 }
+.product-card {
+  position: relative; /* Ensures the gift icon is positioned correctly */
+  width: 200px; /* Example width of the product card */
+  height: 300px; /* Example height of the product card */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.gift-icon {
+  position: absolute;
+  top: 8px; /* Slightly offset from the top */
+  left: 8px; /* Slightly offset from the left */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  background-color: rgb(255, 160, 36);
+  padding: 5px;
+  border-radius: 50%;
+  z-index: 1; /* Ensure it appears above the card content */
+}
+
+.gift-icon img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
 @media (max-width: 768px) {
   .swiper-slide {
     width: 120px;
