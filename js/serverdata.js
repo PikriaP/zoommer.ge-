@@ -15,7 +15,12 @@ fetch('products.json')
             ${product.previousPrice ? `<span class="product-old-price">${product.previousPrice}₾</span>` : ''}
           </div>
           <p class="product-name">${product.name}</p>
-          <button class="cart-btn">Add to Cart</button>
+          <div class"cart">
+          <div class="compare">
+          <img src="./assets/photo/compare-card.svg" alt="card-icon"></div>
+          <button class="cart-btn">
+          <img src="/assets/photo/cart.svg"><span>დამატება</span></button>
+          </div>
         `;
 
         wrapper.appendChild(productCard);
@@ -55,11 +60,10 @@ fetch('products.json')
     initializeSwiper('.nineth-slider', '.nineth-prev', '.nineth-next');
     initializeSwiper('.tenth-slider', '.tenth-prev', '.tenth-next');
     initializeSwiper('.eleventh-slider', '.eleventh-prev', '.eleventh-next');
-    initializeSwiper('.fourth-slider', '.fourth-prev', '.fourth-next');
-    initializeSwiper('.fifth-slider', '.fifth-prev', '.fifth-next');
-    initializeSwiper('.sixth-slider', '.sixth-prev', '.sixth-next');
-    initializeSwiper('.seventh-slider', '.seventh-prev', '.seventh-next');
-    initializeSwiper('.eighth-slider', '.eighth-prev', '.eighth-next');
+    initializeSwiper('.twelveth-slider', '.twelveth-prev', '.twelveth-next');
+    initializeSwiper('.thirteenth-slider', '.thirteenth-prev', '.thirteenth-next');
+    initializeSwiper('.fourteenth-slider', '.fourteenth-prev', '.fourteenth-next');
+
 
     // Continue this for all 12 sliders
   })
