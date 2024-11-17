@@ -109,18 +109,7 @@ a {
   grid-template-columns: 246px calc(100% - 276px);
   column-gap: 30px;
 }
-.carousel-img {
-  width: 100%; /* Make each image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  position: absolute;
-  max-width: 100%;
-  height: 342px;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  display: none; /* Initially hide all images */
-  transition: opacity 0.5s ease; /* Smooth transition */
-}
+
 
 .aside-menu {
   width: 246px;
