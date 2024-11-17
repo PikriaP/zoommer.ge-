@@ -8,20 +8,30 @@ fetch('products.json')
         const productCard = document.createElement('div');
         productCard.classList.add('swiper-slide', 'product-card');
 
-        productCard.innerHTML = `
-          <img src="${product.imageUrl}" alt="${product.name}" class="product-thumb">
-          <div class="price-section">
-            <span class="product-price">${product.price}₾</span>
-            ${product.previousPrice ? `<span class="product-old-price">${product.previousPrice}₾</span>` : ''}
-          </div>
-          <p class="product-name">${product.name}</p>
-          <div class"cart">
-          <div class="compare">
-          <img src="./assets/photo/compare-card.svg" alt="card-icon"></div>
-          <button class="cart-btn">
-          <img src="/assets/photo/cart.svg"><span>დამატება</span></button>
-          </div>
-        `;
+       // Calculate the installment price for 24 months
+const installmentPrice = (product.price / 24).toFixed(2);
+
+productCard.innerHTML = `
+  <img src="${product.imageUrl}" alt="${product.name}" class="product-thumb">
+  <div class="bestp">BEST PRICE</div>
+  <div class="price-container">
+    <div class="price-details">
+      <h4 class="product-price">${product.price}₾</h4>
+      ${product.previousPrice ? `<span class="product-old-price">${product.previousPrice}₾</span>` : ''}
+    </div>
+    <p class="installment-info">თვეში: <span class="installment-price">${installmentPrice}₾</span> -დან</p>
+    <a href="#" class="product-link">${product.name}</a>
+  </div>
+  <div class="cart">
+    <div class="compare">
+      <img src="./assets/photo/compare-card.svg" alt="compare-icon">
+    </div>
+    <button class="cart-btn">
+      <img src="/assets/photo/cart.svg" alt="cart-icon">დამატება
+    </button>
+  </div>
+`;
+
 
         wrapper.appendChild(productCard);
       });
