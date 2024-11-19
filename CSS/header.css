@@ -163,6 +163,7 @@ header {
 
 .flag-box {
   position: relative;
+  z-index: 500;
 }
 .flag-btn {
   display: flex;
