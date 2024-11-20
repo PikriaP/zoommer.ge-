@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/pages.css" />
+    <link rel="stylesheet" href="../CSS/fonts.css" />
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="icon" href="../assets/photo/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script  src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>ჩვენი ფილიალები &middot; Zoommer</title>
+  </head>
+  <body>
+    <div class="page-content branches__content">
+      <div class="branches__content-container">
+        <div class="branches__content-header">
+          <h1>ფილიალები</h1>
+          <div class="branches__right-side">
+            <div class="branches__search-bar">
+              <img src="../assets/photo/main-search.svg" alt="Search Icon" />
+              <input
+                class="branches__search-input"
+                type="text"
+                placeholder="მოძებნე ფილიალი"
+              />
+            </div>
+            <div class="branches__dropdown">
+              <select id="city-select" name="city">
+                <option value="" disabled selected>აირჩიეთ ქალაქი</option>
+                <option value="all">ყველა ფილიალი</option>
+                <option value="tbilisi">თბილისი</option>
+                <option value="rustavi">რუსთავი</option>
+                <option value="batumi">ბათუმი</option>
+                <option value="kutaisi">ქუთაისი</option>
+                <option value="zugdidi">ზუგდიდი</option>
+                <option value="telavi">თელავი</option>
+                <option value="akhaltsikhe">ახალციხე</option>
+                <option value="gori">გორი</option>
+              </select>
+            </div>
+            <div class="branches__content-checkbox">
+              <input type="checkbox" class="open-branches__checkbox" />
+              <label for="open-branches__checkbox">ღიაა</label>
+            </div>
+          </div>
+        </div>
+        <div class="branches-map" style="height: 200px; width: 100%;" >
+          
+        </div>
+        <div class="branches__cards-container"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../headerScripts/branches.js"></script>
+    <script type="module" src="../headerScripts/header.js"></script>
+  </body>
+</html>

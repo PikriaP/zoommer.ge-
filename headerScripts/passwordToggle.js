@@ -16,10 +16,9 @@ export const initPasswordToggle = () => {
     passwordShownIcon.style.display = isVisible ? "block" : "none";
   };
 
-  // Initialize icons' visibility (start with password hidden)
   updateIconVisibility(false);
 
-  // Add event listeners to toggle password visibility when icons are clicked
+  // Password visibility
   passwordHiddenIcon.addEventListener("click", togglePasswordVisibility);
   passwordShownIcon.addEventListener("click", togglePasswordVisibility);
 };

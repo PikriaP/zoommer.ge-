@@ -5,6 +5,8 @@ import { initGoogleAuth } from "./googleAuth.js";
 import { initPasswordToggle } from "./passwordToggle.js";
 import { initModal } from "./modal.js";
 import { initLanguageToggle } from "./languageToggle.js";
+import { initSearch } from "./search.js";
+import { loadCategories } from "./all-category.js";
 
 // Initialize all the imported functionalities
 initStickyHeader();
@@ -13,6 +15,8 @@ initGoogleAuth();
 initPasswordToggle();
 initModal();
 initLanguageToggle();
+initSearch();
+loadCategories();
 
 document.addEventListener("DOMContentLoaded", () => {
   const burgerMenu = document.querySelector(".burger-menu");
@@ -40,18 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
       headerSlide.classList.remove("active");
     }
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Navigation and logo click events
   const mainNav = document.querySelector(".main-header__nav");
   const mainLogo = document.querySelector(".main-header__logo");
   const allCategory = document.querySelector(".all-category-section");
 
+  // Show categories on navigation click
   mainNav.addEventListener("click", () => {
     allCategory.style.display = "flex";
   });
 
-  mainLogo.addEventListener("click", () => {
-    allCategory.style.display = "none";
+  // Redirect to home page on logo click
+  mainLogo.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.href = "/";
   });
 });

@@ -1,6 +1,7 @@
 export const initModal = () => {
   const elements = {
     loginBtn: document.querySelector(".main-header__btn.main-header__login"),
+    bottomLogin: document.getElementById("bottomLogin"),
     modal: document.getElementById("loginModal"),
     closeModal: document.getElementById("closeModal"),
   };
@@ -23,6 +24,12 @@ export const initModal = () => {
     elements.modal.style.display = "none";
     toggleBodyScroll(false);
   };
+
+  // Event listener to show modal on bottom nav login click
+  elements.bottomLogin.addEventListener("click", (e) => {
+    e.preventDefault();
+    showModal();
+  });
 
   // Event listener to show modal on login button click
   elements.loginBtn.addEventListener("click", (e) => {
