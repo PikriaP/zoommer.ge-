@@ -47,11 +47,11 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: var(--font-firago);
-    -webkit-tap-highlight-color: transparent;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--font-firago);
+  -webkit-tap-highlight-color: transparent;
 }
