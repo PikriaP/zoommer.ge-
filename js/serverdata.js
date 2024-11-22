@@ -1,5 +1,5 @@
 // Fetch products data from products.json
-fetch('products.json')
+fetch('getcontent.json')
   .then((response) => response.json())
   .then((products) => {
     // Function to create product cards
