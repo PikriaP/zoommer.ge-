@@ -1417,4 +1417,55 @@ footer img {
     .next-btn:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-  
+
+    /* cookie */
+    .cookie-popup {
+      position: fixed;
+      bottom: 1rem;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      line-height: 16px;
+      justify-content: space-between;
+      display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 29px;
+    margin-inline: auto;
+    background-color: rgba(23, 49, 79, 0.84);
+    max-width: 858px;
+    color: rgb(255, 255, 255);
+    line-height: 16px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    }
+      
+    .popup-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      gap: 16px;
+      width: 80%;
+    }
+      
+    .close-icon {
+      position: absolute;
+      top: -13px;
+      right: 45px;
+      cursor: pointer;
+    }
+      
+    .cookie-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: var(--orange-main);
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    }
+    

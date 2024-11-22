@@ -515,3 +515,5 @@ function createCategoryItem(category, isActiveClass) {
     </li>
   `;
 }
+
+
