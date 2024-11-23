@@ -552,31 +552,7 @@ footer img {
   }
 }
 
-/* @media (max-width: 500px) {
-  .footer__description {
-    width: 40%;
-  }
-} */
 
-
-/* 
-.main-div {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 130px;
-  padding: 115px 15px;
-}
-
-.slider-div {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  position: relative;
-} */
-
-/* Aside section (left side) */
 .aside-div {
   width: 246px;
   height: 342px;
