@@ -135,36 +135,6 @@
       "isAbsoluteUrl": true
   },
   {
-      "title": "Philips",
-      "bannerType": 3,
-      "productId": null,
-      "promotionId": null,
-      "route": "https://zoommer.ge/search/philips%20%E1%83%A1%E1%83%90%E1%83%9E%E1%83%90%E1%83%A0%E1%83%A1%E1%83%98?utm_source=Website&utm_medium=X-Card-Philips",
-      "categoryId": null,
-      "categoryName": null,
-      "orderNo": 16,
-      "webImageUrl": "https://s3.zoommer.ge/site/cf05077c-f993-4923-bbe5-69d9f8e46186_Thumb.jpeg",
-      "mobileImageUrl": "https://s3.zoommer.ge/site/1c9150a2-3bde-4c23-a133-f822cf2048b0_Thumb.jpeg",
-      "position": 1,
-      "largeBanner": false,
-      "isAbsoluteUrl": false
-  },
-  {
-      "title": "Apple AirPods Max",
-      "bannerType": 3,
-      "productId": null,
-      "promotionId": null,
-      "route": "https://zoommer.ge/audio-sistema/apple-airpods-max-blue-p25266?utm_source=Website&utm_medium=X-Card-Apple-AirPods-Max",
-      "categoryId": null,
-      "categoryName": null,
-      "orderNo": 17,
-      "webImageUrl": "https://s3.zoommer.ge/site/1cffbaec-faa9-4313-b3da-2005de58ffd5_Thumb.jpeg",
-      "mobileImageUrl": "https://s3.zoommer.ge/site/22c059a1-2096-470c-824d-28d1a9c12e0c_Thumb.jpeg",
-      "position": 1,
-      "largeBanner": false,
-      "isAbsoluteUrl": true
-  },
-  {
       "title": "LENOVO V 15",
       "bannerType": 3,
       "productId": null,

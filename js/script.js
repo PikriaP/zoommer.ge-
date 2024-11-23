@@ -299,3 +299,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const burgerButton = document.querySelector('.burger-menu');
+const dropdown = document.querySelector('.dropdown--responsive');
+const overlay = document.querySelector('.overlay');
+
+burgerButton.addEventListener('click', () => {
+  // Toggle the dropdown visibility
+  dropdown.classList.toggle('active');
+  
+  // Toggle the overlay visibility
+  overlay.style.display = dropdown.classList.contains('active') ? 'block' : 'none';
+});
+overlay.addEventListener('click', () => {
+  dropdown.classList.remove('active');
+  overlay.style.display = 'none';
+});

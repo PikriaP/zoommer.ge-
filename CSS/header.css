@@ -1,3 +1,5 @@
+
+
 /* HEADER */
 header {
   font-family: __firago_124989;
@@ -144,18 +146,20 @@ header {
 
 .search-popup-box {
   padding: 20px;
+  z-index: 9999999;
 }
 
 .search-popup {
   width: 600px;
   height: 307px;
   position: absolute;
+  /* display:block;
+  position: fixed; */
   left: 53%;
   top: 60px;
   transform: translateX(-50%);
   background: var(--white-main);
   width: 600px;
-  z-index: 13;
   border-radius: 12px;
   z-index: 9999999;
 }
@@ -169,7 +173,7 @@ header {
   overflow: hidden;
   margin-top: 20px;
   position: absolute;
-  z-index: 99999;
+  z-index: 9999999;
 }
 
 .search-popup__body-item {
@@ -430,8 +434,37 @@ header {
   border: 1px solid var(--white-600);
   padding: 0px 10px 10px;
   font-family: __firago_124989;
+  z-index: 50;
+}
+.bottom-nav__item h4 {
+  color: var(--gray-main);
 }
 
+.bottom-nav__item.active h4 {
+  color: var(--orange-main);
+}
+
+.bottom-nav__item.active img {
+  filter: var(--orange-main);
+}
+/* Default styles */
+.bottom-nav__item h4,
+.bottom-nav__item img {
+  color: var(--gray-main);
+  stroke: var(--gray-main);
+}
+
+/* Highlight active */
+.bottom-nav__item.active h4,
+.bottom-nav__item.active img {
+  color: var(--orange-main);
+  stroke: var(--orange-main);
+}
+
+.active *,
+.logo * {
+  stroke: var(--orange-main);
+}
 .bottom-nav__item {
   display: flex;
   flex-direction: column;
