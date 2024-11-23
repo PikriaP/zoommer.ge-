@@ -111,7 +111,7 @@ a {
 }
 
 
-.aside-menu {
+/* .aside-menu {
   width: 246px;
   position: relative;
   min-height: 342px;
@@ -141,9 +141,9 @@ a {
   width: 23px;
   height: 20px;
   color: transparent;
-}
+} */
 
-.aside-menu-heading {
+/* .aside-menu-heading {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -162,9 +162,9 @@ a {
 
 .aside-menu-container {
   position: relative;
-}
+} */
 
-.dropdown-content {
+/* .dropdown-content {
   padding: 0px;
   box-shadow: rgba(0, 0, 0, 0.08) 4px 0px 8px 1px;
   border-left: 1px solid #ffff;
@@ -188,9 +188,9 @@ a {
 .dropdown-content--tv,
 .dropdown-content--photo {
   display: none;
-}
+} */
 
-.dropdown-column h5 {
+/* .dropdown-column h5 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -219,7 +219,7 @@ a {
 .dropdown-column ul li a {
   text-decoration: none;
   color: #333;
-}
+} */
 
 .dropdown-column ul li a:hover {
   color: #007bff;
@@ -398,20 +398,6 @@ body {
   height: 342px;
 }
 
-/* .carousel-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 895px !important;
-  height: 340px !important;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-
-} */
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -559,21 +545,54 @@ footer img {
   background-color: #f0f0f0;
 }
 
-.carousel-container {
-  position: relative;
-  border-radius: 15px;
-  width: 894px;
-  height: 342px;
-  overflow: hidden;
-  /* margin-right: 30px; */
-}
+
 
 .carousel-slide {
   display: flex;
   transition: 0.5s ease-in-out;
   width: 100%;
+  z-index: 10;
+  position: relative;
 }
 
+.carousel-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: fit-content;
+  height: 340px;
+  width: 895px;
+  background-position: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.carousel-slide {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: fit-content;
+  transition: 0.5s ease-in-out;
+  height: 340px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  z-index: 10;
+}
+.carousel-container {
+  position: relative;
+  border-radius: 15px;
+  width: 894px;
+  height: 342px;
+  z-index: 10;
+  overflow: hidden;
+  /* margin-right: 30px; */
+}
 /* .carousel-img {
   max-width: 100%;
   height: 342px;
@@ -616,22 +635,6 @@ footer img {
 .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 
-}
-
-.carousel-slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: fit-content;
-  height: 340px;
-  width: 895px;
-  background-position: inherit;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1
 }
 
 
@@ -1065,44 +1068,28 @@ footer img {
   .chat-form {
     display: none;
   }
-    /* Aside section (left side) */
-    /* .aside-div {
-      width: 246px;
-      height: 342px;
-      background-color: #f0f0f0;
-    } */
 
-    /* .carousel-container {
-      position: relative;
-      border-radius: 15px;
-      width: 894px;
-      height: 342px;
-      overflow: hidden;
-      margin-right: 30px;
 
-    } */
+.start-chat {
+  width: 245px;
+  height: 48px;
+  border-radius: 8px;
+  border: 0px;
+  background-color: rgba(240, 121, 8, 0.2);
+  color: rgb(240, 121, 8);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
 
-    .start-chat {
-      width: 245px;
-      height: 48px;
-      border-radius: 8px;
-      border: 0px;
-      background-color: rgba(240, 121, 8, 0.2);
-      color: rgb(240, 121, 8);
-      font-weight: 700;
-      font-size: 14px;
-      cursor: pointer;
-    }
+.chat__header--backTo {
+  display: none;
+}
 
-    .chat__header--backTo {
-      display: none;
-    }
-
-    .chat-form__wrapper {
-      align-items: center;
-      display: flex;
-
-      justify-content: center;
+.chat-form__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
       flex-direction: column;
       gap: 32px;
       font-size: 14px;

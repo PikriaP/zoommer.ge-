@@ -51,58 +51,7 @@
     --product-floatBar-oldPrice-black: #fff;
   }
   
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    border-radius: 12px;
-  }
   
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--orange-07);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--orange-05);
-    border-radius: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    border-radius: 12px;
-  }
-  
-  body,
-  html {
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .main-sec {
-    flex-grow: 1;
-    margin: 30px 0px 60px;
-  }
-  
-  .main-div {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
-  }
-  
-  .slider-div {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 246px calc(100% - 276px);
-    column-gap: 30px;
-  }
   
   .aside-menu {
     width: 246px;
@@ -168,6 +117,7 @@
     border: none;
     overflow: hidden;
     background: white;
+    z-index: 20;
   }
   
   .dropdown-content--mobiles,
