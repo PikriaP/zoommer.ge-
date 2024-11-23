@@ -2,7 +2,7 @@
 
 /* HEADER */
 header {
-  font-family: __firago_124989;
+  font-family: '__firago_124989';
   font-size: 12px;
   font-weight: 500;
 }
@@ -19,6 +19,9 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
+  font-family: '__firago_124989';
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .top-bar__contact-info {
@@ -60,10 +63,13 @@ header {
 /* MAIN HEADER */
 .main-header {
   position: relative;
-  font-size: 14px;
   padding: 0px 15px;
   background: var(--white-400);
   transition: all 0.3s ease;
+  font-family: '__firago_124989';
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
 }
 
 /* STICKY HEADER */
@@ -155,6 +161,7 @@ header {
   position: absolute;
   /* display:block;
   position: fixed; */
+  font-family: '__firago_124989';
   left: 53%;
   top: 60px;
   transform: translateX(-50%);
@@ -362,7 +369,7 @@ header {
 
 /* Navigation -> all category*/
 .all-category-section {
-  font-family: __firago_124989;
+  font-family: '__firago_124989';
   padding: 40px 0 30px;
   display: flex;
   justify-content: center;
@@ -433,7 +440,7 @@ header {
   background: var(--white-main);
   border: 1px solid var(--white-600);
   padding: 0px 10px 10px;
-  font-family: __firago_124989;
+  font-family: '__firago_124989';
   z-index: 50;
 }
 .bottom-nav__item h4 {
