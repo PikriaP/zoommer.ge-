@@ -208,9 +208,9 @@
   }
 }
 .product-card {
-  position: relative; /* Ensures the gift icon is positioned correctly */
-  width: 200px; /* Example width of the product card */
-  height: 300px; /* Example height of the product card */
+  position: relative; 
+  width: 200px;
+  height: 300px;
   border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
