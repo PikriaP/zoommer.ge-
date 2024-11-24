@@ -10,16 +10,18 @@ fetch('products.json')
 
         productCard.innerHTML = `
           <img src="${product.imageUrl}" alt="${product.name}" class="product-thumb">
+          <div class="product-info">
           <div class="price-section">
             <span class="product-price">${product.price}₾</span>
             ${product.previousPrice ? `<span class="product-old-price">${product.previousPrice}₾</span>` : ''}
           </div>
           <p class="product-name">${product.name}</p>
-          <div class"cart">
+          </div>
+          <div class="cart">
           <div class="compare">
-          <img src="./assets/photo/compare-card.svg" alt="card-icon"></div>
+          <img src="../assets/photo/comparecard.svg" alt="card-icon"></div>
           <button class="cart-btn">
-          <img src="/assets/photo/cart.svg"><span>დამატება</span></button>
+          <img src="../assets/photo/cart.svg"><span>დამატება</span></button>
           </div>
         `;
 
@@ -33,7 +35,7 @@ fetch('products.json')
 
       new Swiper(container, {
         slidesPerView: 6,
-        spaceBetween: 20,
+        spaceBetween: 50,
         slidesPerGroup: 1,
         loop: false,
         navigation: {
