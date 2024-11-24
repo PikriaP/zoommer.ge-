@@ -1,27 +1,15 @@
-const swiper = new swiper('.swiper-container', {
-  slidesPerView: 6,
-  spaceBetween: 35,
-  slidesPerGroup: 1,
-  loop: false,
+// Initialize Swiper
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 6,          // Show 6 product cards at a time
+  spaceBetween: 20,          // Adjust the space between slides if needed
+  slidesPerGroup: 1,         // Move one slide per click
+  loop: false,               // Set to true if you want an endless loop
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints: {
-    // For responsive design
-    320: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    },
-    768: {
-      slidesPerView: 4,
-      slidesPerGroup: 1,
-    },
-    1024: {
-      slidesPerView: 6,
-      slidesPerGroup: 1,
-    },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
-
-  
