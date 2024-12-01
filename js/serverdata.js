@@ -19,9 +19,9 @@ fetch('products.json')
           </div>
           <div class="cart">
           <div class="compare">
-          <img src="./assets/photo/comparecard.svg" alt="card-icon"></div>
+          <img src="../assets/photo/comparecard.svg" alt="card-icon"></div>
           <button class="cart-btn">
-          <img src="./assets/photo/cart.svg"><span>დამატება</span></button>
+          <img src="../assets/photo/cart.svg"><span>დამატება</span></button>
           </div>
         `;
 
